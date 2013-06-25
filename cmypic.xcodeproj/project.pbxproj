@@ -33,6 +33,14 @@
 		0E802C89176B402A004466D4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E802C88176B402A004466D4 /* SystemConfiguration.framework */; };
 		0E802C8D176B6C5A004466D4 /* PJ_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E802C8C176B6C5A004466D4 /* PJ_LoginViewController.m */; };
 		0EA05274176C85FF000D010D /* PJ_ProfieEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA05273176C85FF000D010D /* PJ_ProfieEditViewController.m */; };
+		0EA0529D176CD9FC000D010D /* PJ_HomeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0529C176CD9FC000D010D /* PJ_HomeFeedViewController.m */; };
+		0EA052A1176CE8BE000D010D /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA052A0176CE8BE000D010D /* WBTabBarController.m */; };
+		0EA052AF176CE9CB000D010D /* camera_button_take.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EA052AB176CE9CB000D010D /* camera_button_take.png */; };
+		0EA052B0176CE9CB000D010D /* camera_button_take@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EA052AC176CE9CB000D010D /* camera_button_take@2x.png */; };
+		0EA052B1176CE9CB000D010D /* tabBar_cameraButton_ready_matte.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EA052AD176CE9CB000D010D /* tabBar_cameraButton_ready_matte.png */; };
+		0EA052B2176CE9CB000D010D /* tabBar_cameraButton_ready_matte@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EA052AE176CE9CB000D010D /* tabBar_cameraButton_ready_matte@2x.png */; };
+		0EDDED461779C17B00B7E790 /* PJ_SettingsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED451779C17B00B7E790 /* PJ_SettingsMainViewController.m */; };
+		0EDDED471779C17B00B7E790 /* PJ_SettingsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED451779C17B00B7E790 /* PJ_SettingsMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +87,16 @@
 		0E802C8C176B6C5A004466D4 /* PJ_LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_LoginViewController.m; sourceTree = "<group>"; };
 		0EA05272176C85FF000D010D /* PJ_ProfieEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_ProfieEditViewController.h; sourceTree = "<group>"; };
 		0EA05273176C85FF000D010D /* PJ_ProfieEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_ProfieEditViewController.m; sourceTree = "<group>"; };
+		0EA0529B176CD9FC000D010D /* PJ_HomeFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_HomeFeedViewController.h; sourceTree = "<group>"; };
+		0EA0529C176CD9FC000D010D /* PJ_HomeFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_HomeFeedViewController.m; sourceTree = "<group>"; };
+		0EA0529F176CE8BE000D010D /* WBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTabBarController.h; sourceTree = "<group>"; };
+		0EA052A0176CE8BE000D010D /* WBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTabBarController.m; sourceTree = "<group>"; };
+		0EA052AB176CE9CB000D010D /* camera_button_take.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_button_take.png; sourceTree = "<group>"; };
+		0EA052AC176CE9CB000D010D /* camera_button_take@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_button_take@2x.png"; sourceTree = "<group>"; };
+		0EA052AD176CE9CB000D010D /* tabBar_cameraButton_ready_matte.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar_cameraButton_ready_matte.png; sourceTree = "<group>"; };
+		0EA052AE176CE9CB000D010D /* tabBar_cameraButton_ready_matte@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_cameraButton_ready_matte@2x.png"; sourceTree = "<group>"; };
+		0EDDED441779C17B00B7E790 /* PJ_SettingsMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_SettingsMainViewController.h; sourceTree = "<group>"; };
+		0EDDED451779C17B00B7E790 /* PJ_SettingsMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_SettingsMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +175,9 @@
 		0E6B80C0176B3A8F0088A3FE /* cmypic */ = {
 			isa = PBXGroup;
 			children = (
+				0EDDED421779C15400B7E790 /* Settings Tab */,
+				0EA0529E176CE89D000D010D /* CustomTabBar */,
+				0EA0529A176CD9EA000D010D /* HomeFeed */,
 				0EA0526E176C84DA000D010D /* ProfileEdit and FirstTimeSetting */,
 				0E71DB16176B734700360759 /* SignUp */,
 				0E802C8A176B6C3A004466D4 /* LoginView */,
@@ -165,6 +186,7 @@
 				0E6B80CA176B3A8F0088A3FE /* PJ_AppDelegate.m */,
 				0E6B80CC176B3A8F0088A3FE /* Main.storyboard */,
 				0E6B80D2176B3A8F0088A3FE /* Images.xcassets */,
+				0EA0527C176CD98E000D010D /* Resources */,
 				0E6B80C1176B3A8F0088A3FE /* Supporting Files */,
 			);
 			path = cmypic;
@@ -232,6 +254,60 @@
 				0EA05273176C85FF000D010D /* PJ_ProfieEditViewController.m */,
 			);
 			name = "ProfileEdit and FirstTimeSetting";
+			sourceTree = "<group>";
+		};
+		0EA0527C176CD98E000D010D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0EA0529A176CD9EA000D010D /* HomeFeed */ = {
+			isa = PBXGroup;
+			children = (
+				0EA0529B176CD9FC000D010D /* PJ_HomeFeedViewController.h */,
+				0EA0529C176CD9FC000D010D /* PJ_HomeFeedViewController.m */,
+			);
+			name = HomeFeed;
+			sourceTree = "<group>";
+		};
+		0EA0529E176CE89D000D010D /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0EA0529F176CE8BE000D010D /* WBTabBarController.h */,
+				0EA052A0176CE8BE000D010D /* WBTabBarController.m */,
+				0EA052A2176CE8D7000D010D /* Images */,
+			);
+			name = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		0EA052A2176CE8D7000D010D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0EA052AB176CE9CB000D010D /* camera_button_take.png */,
+				0EA052AC176CE9CB000D010D /* camera_button_take@2x.png */,
+				0EA052AD176CE9CB000D010D /* tabBar_cameraButton_ready_matte.png */,
+				0EA052AE176CE9CB000D010D /* tabBar_cameraButton_ready_matte@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		0EDDED421779C15400B7E790 /* Settings Tab */ = {
+			isa = PBXGroup;
+			children = (
+				0EDDED431779C15E00B7E790 /* SettingsMainView */,
+			);
+			name = "Settings Tab";
+			sourceTree = "<group>";
+		};
+		0EDDED431779C15E00B7E790 /* SettingsMainView */ = {
+			isa = PBXGroup;
+			children = (
+				0EDDED441779C17B00B7E790 /* PJ_SettingsMainViewController.h */,
+				0EDDED451779C17B00B7E790 /* PJ_SettingsMainViewController.m */,
+			);
+			name = SettingsMainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +387,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EA052B2176CE9CB000D010D /* tabBar_cameraButton_ready_matte@2x.png in Resources */,
+				0EA052B1176CE9CB000D010D /* tabBar_cameraButton_ready_matte.png in Resources */,
+				0EA052B0176CE9CB000D010D /* camera_button_take@2x.png in Resources */,
+				0EA052AF176CE9CB000D010D /* camera_button_take.png in Resources */,
 				0E6B80D3176B3A8F0088A3FE /* Images.xcassets in Resources */,
 				0E6B80C5176B3A8F0088A3FE /* InfoPlist.strings in Resources */,
 				0E6B80CE176B3A8F0088A3FE /* Main.storyboard in Resources */,
@@ -332,11 +412,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EDDED461779C17B00B7E790 /* PJ_SettingsMainViewController.m in Sources */,
 				0E6B80CB176B3A8F0088A3FE /* PJ_AppDelegate.m in Sources */,
 				0E802C8D176B6C5A004466D4 /* PJ_LoginViewController.m in Sources */,
+				0EA0529D176CD9FC000D010D /* PJ_HomeFeedViewController.m in Sources */,
 				0EA05274176C85FF000D010D /* PJ_ProfieEditViewController.m in Sources */,
 				0E71DB1C176B85D900360759 /* PJ_SignUpViewController.m in Sources */,
 				0E6B80C7176B3A8F0088A3FE /* main.m in Sources */,
+				0EA052A1176CE8BE000D010D /* WBTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EDDED471779C17B00B7E790 /* PJ_SettingsMainViewController.m in Sources */,
 				0E6B80E6176B3A8F0088A3FE /* cmypicTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

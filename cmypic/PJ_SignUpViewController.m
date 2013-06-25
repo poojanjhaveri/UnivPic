@@ -40,6 +40,13 @@
 
 - (IBAction)signupdonebuttonpressed:(id)sender {
    
+    
+    // IF condition oto see if the email is valid
+    if([self validateEmailWithString:self.emailaddress.text])
+    {
+    
+    
+    
     //1
     PFUser *user = [PFUser user];
     //2
@@ -61,12 +68,34 @@
         }
     }];
     
-   
+    }
+    else{
+        
+        // Alert view to restrict only usc email address
+        
+        NSString *emailwrong = @"The Service is currently open to USC - university of southern california only.Please enter your usc email address if you have one.";
+        UIAlertView *emailWrongView = [[UIAlertView alloc] initWithTitle:@"Sorry" message:emailwrong delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [emailWrongView show];
+        
+    }
 }
 
--(void)textFieldDidEndEditing:(UITextField *)textField
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+
+/*
+ Function to see if the email address entered is a valid usc email address.
+ Returns - Boolean value true/false
+ */
+- (BOOL)validateEmailWithString:(NSString*)email
 {
-    [self resignFirstResponder];
+  //  NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+      NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@usc.edu";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:email];
 }
 
 @end

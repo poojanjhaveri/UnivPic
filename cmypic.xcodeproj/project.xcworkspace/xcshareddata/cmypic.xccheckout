@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D27A54FD-0E3A-4EF2-B40E-9D648DABFBA0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>cmypic</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6250FF0E-C446-46F4-97A3-71832A980A4D</key>
+		<string>https://github.com/poojanjhaveri/UnivPic.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>cmypic.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6250FF0E-C446-46F4-97A3-71832A980A4D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/poojanjhaveri/UnivPic.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6250FF0E-C446-46F4-97A3-71832A980A4D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6250FF0E-C446-46F4-97A3-71832A980A4D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cmypic</string>
+		</dict>
+	</array>
+</dict>
+</plist>
