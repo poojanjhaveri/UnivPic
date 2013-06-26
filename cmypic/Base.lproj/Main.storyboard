@@ -258,21 +258,77 @@
             </objects>
             <point key="canvasLocation" x="4050" y="41"/>
         </scene>
-        <!--View Controller - Checklist-->
+        <!--Check List Main View Controller - PhotoMemory Checklist-->
         <scene sceneID="RjC-1U-UP8">
             <objects>
-                <viewController id="dpk-P2-Raz" sceneMemberID="viewController">
+                <viewController id="dpk-P2-Raz" customClass="PJ_CheckListMainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Prt-mX-yfm">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mh8-3u-QEr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.039215687659999998" green="0.66274511810000003" blue="0.7607843876" alpha="0.14999999999999999" colorSpace="deviceRGB"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="a7g-wf-hlc"/>
+                                    <barButtonItem style="plain" id="RWG-s3-7po">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="EK0-tl-rL3">
+                                            <rect key="frame" x="5" y="8" width="311" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Memories to be Created"/>
+                                                <segment title="Memories Stored"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="segmentControlChanged:" destination="dpk-P2-Raz" eventType="valueChanged" id="3v8-BR-Oxg"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="n81-kF-RBL"/>
+                                </items>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zrL-K3-se7">
+                                <rect key="frame" x="0.0" y="44" width="320" height="411"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="Cell" rowHeight="50" id="DeI-BY-Liz">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" title="Checklist" id="4zw-Nr-aU5"/>
+                    <navigationItem key="navigationItem" title="PhotoMemory Checklist" id="4zw-Nr-aU5">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="edit" id="2TX-PK-krQ">
+                            <connections>
+                                <action selector="editButtonPressed:" destination="dpk-P2-Raz" id="Dz1-4i-Gcl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qdx-X7-qef">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="dpk-P2-Raz" id="TW7-LW-AmB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="qdx-X7-qef" id="SMn-ze-bNp"/>
+                        <outlet property="editButton" destination="2TX-PK-krQ" id="5Hh-J6-gHw"/>
+                        <outlet property="tableView" destination="zrL-K3-se7" id="npO-Xi-oGR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAj-2l-wQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5122" y="-68"/>
+            <point key="canvasLocation" x="5076" y="-68"/>
         </scene>
         <!--Settings Main View Controller - Settings-->
         <scene sceneID="utH-jR-wZP">
@@ -440,6 +496,46 @@
             <point key="canvasLocation" x="4586" y="2026"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="PJ_CheckListMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_CheckListMainViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="addButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="editButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="PJ_LoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_LoginViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="loginEmailAddress" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="loginPassword" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="PJ_ProfieEditViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_ProfieEditViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="logOutPressed:"/>
+            </relationships>
+        </class>
+        <class className="PJ_SettingsMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_SettingsMainViewController.h"/>
+        </class>
+        <class className="PJ_SignUpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_SignUpViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="emailaddress" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="WBTabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WBTabBarController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="centerButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="plusController" candidateClass="UIViewController"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

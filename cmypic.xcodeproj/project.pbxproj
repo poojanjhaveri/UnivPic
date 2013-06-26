@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E178B9E177AF510009C06D4 /* PJ_ChecklistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E178B9D177AF510009C06D4 /* PJ_ChecklistModel.m */; };
 		0E6B80BB176B3A8F0088A3FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6B80BA176B3A8F0088A3FE /* Foundation.framework */; };
 		0E6B80BD176B3A8F0088A3FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6B80BC176B3A8F0088A3FE /* CoreGraphics.framework */; };
 		0E6B80BF176B3A8F0088A3FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6B80BE176B3A8F0088A3FE /* UIKit.framework */; };
@@ -41,6 +42,13 @@
 		0EA052B2176CE9CB000D010D /* tabBar_cameraButton_ready_matte@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EA052AE176CE9CB000D010D /* tabBar_cameraButton_ready_matte@2x.png */; };
 		0EDDED461779C17B00B7E790 /* PJ_SettingsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED451779C17B00B7E790 /* PJ_SettingsMainViewController.m */; };
 		0EDDED471779C17B00B7E790 /* PJ_SettingsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED451779C17B00B7E790 /* PJ_SettingsMainViewController.m */; };
+		0EDDED531779CF6000B7E790 /* MVScrollerClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED4B1779CF6000B7E790 /* MVScrollerClipView.m */; };
+		0EDDED541779CF6000B7E790 /* MVSelectorContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED4D1779CF6000B7E790 /* MVSelectorContentView.m */; };
+		0EDDED551779CF6000B7E790 /* MVSelectorScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED4F1779CF6000B7E790 /* MVSelectorScrollView.m */; };
+		0EDDED561779CF6000B7E790 /* MVSelectorScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EDDED501779CF6000B7E790 /* MVSelectorScrollView.xib */; };
+		0EDDED571779CF6000B7E790 /* scroller_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EDDED511779CF6000B7E790 /* scroller_bg@2x.png */; };
+		0EDDED581779CF6000B7E790 /* scroller_glass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EDDED521779CF6000B7E790 /* scroller_glass@2x.png */; };
+		0EDDED5D1779CFFE00B7E790 /* PJ_CheckListMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED5C1779CFFE00B7E790 /* PJ_CheckListMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E178B9C177AF510009C06D4 /* PJ_ChecklistModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_ChecklistModel.h; sourceTree = "<group>"; };
+		0E178B9D177AF510009C06D4 /* PJ_ChecklistModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_ChecklistModel.m; sourceTree = "<group>"; };
 		0E6B80B7176B3A8F0088A3FE /* cmypic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cmypic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6B80BA176B3A8F0088A3FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0E6B80BC176B3A8F0088A3FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,6 +107,17 @@
 		0EA052AE176CE9CB000D010D /* tabBar_cameraButton_ready_matte@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_cameraButton_ready_matte@2x.png"; sourceTree = "<group>"; };
 		0EDDED441779C17B00B7E790 /* PJ_SettingsMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_SettingsMainViewController.h; sourceTree = "<group>"; };
 		0EDDED451779C17B00B7E790 /* PJ_SettingsMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_SettingsMainViewController.m; sourceTree = "<group>"; };
+		0EDDED4A1779CF6000B7E790 /* MVScrollerClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVScrollerClipView.h; sourceTree = "<group>"; };
+		0EDDED4B1779CF6000B7E790 /* MVScrollerClipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVScrollerClipView.m; sourceTree = "<group>"; };
+		0EDDED4C1779CF6000B7E790 /* MVSelectorContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVSelectorContentView.h; sourceTree = "<group>"; };
+		0EDDED4D1779CF6000B7E790 /* MVSelectorContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVSelectorContentView.m; sourceTree = "<group>"; };
+		0EDDED4E1779CF6000B7E790 /* MVSelectorScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVSelectorScrollView.h; sourceTree = "<group>"; };
+		0EDDED4F1779CF6000B7E790 /* MVSelectorScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVSelectorScrollView.m; sourceTree = "<group>"; };
+		0EDDED501779CF6000B7E790 /* MVSelectorScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MVSelectorScrollView.xib; sourceTree = "<group>"; };
+		0EDDED511779CF6000B7E790 /* scroller_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scroller_bg@2x.png"; sourceTree = "<group>"; };
+		0EDDED521779CF6000B7E790 /* scroller_glass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scroller_glass@2x.png"; sourceTree = "<group>"; };
+		0EDDED5B1779CFFE00B7E790 /* PJ_CheckListMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_CheckListMainViewController.h; sourceTree = "<group>"; };
+		0EDDED5C1779CFFE00B7E790 /* PJ_CheckListMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_CheckListMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +154,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E178B9A177AF4E8009C06D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0E178B9B177AF4EF009C06D4 /* Checklistmodel */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0E178B9B177AF4EF009C06D4 /* Checklistmodel */ = {
+			isa = PBXGroup;
+			children = (
+				0E178B9C177AF510009C06D4 /* PJ_ChecklistModel.h */,
+				0E178B9D177AF510009C06D4 /* PJ_ChecklistModel.m */,
+			);
+			name = Checklistmodel;
+			sourceTree = "<group>";
+		};
 		0E6B80AE176B3A8F0088A3FE = {
 			isa = PBXGroup;
 			children = (
@@ -175,8 +213,9 @@
 		0E6B80C0176B3A8F0088A3FE /* cmypic */ = {
 			isa = PBXGroup;
 			children = (
+				0EDDED591779CFDE00B7E790 /* CheckList Tab */,
+				0EDDED481779CF2500B7E790 /* Additional Components */,
 				0EDDED421779C15400B7E790 /* Settings Tab */,
-				0EA0529E176CE89D000D010D /* CustomTabBar */,
 				0EA0529A176CD9EA000D010D /* HomeFeed */,
 				0EA0526E176C84DA000D010D /* ProfileEdit and FirstTimeSetting */,
 				0E71DB16176B734700360759 /* SignUp */,
@@ -185,6 +224,7 @@
 				0E6B80C9176B3A8F0088A3FE /* PJ_AppDelegate.h */,
 				0E6B80CA176B3A8F0088A3FE /* PJ_AppDelegate.m */,
 				0E6B80CC176B3A8F0088A3FE /* Main.storyboard */,
+				0E178B9A177AF4E8009C06D4 /* Models */,
 				0E6B80D2176B3A8F0088A3FE /* Images.xcassets */,
 				0EA0527C176CD98E000D010D /* Resources */,
 				0E6B80C1176B3A8F0088A3FE /* Supporting Files */,
@@ -310,6 +350,48 @@
 			name = SettingsMainView;
 			sourceTree = "<group>";
 		};
+		0EDDED481779CF2500B7E790 /* Additional Components */ = {
+			isa = PBXGroup;
+			children = (
+				0EDDED491779CF6000B7E790 /* MVSelectorScrollView */,
+				0EA0529E176CE89D000D010D /* CustomTabBar */,
+			);
+			name = "Additional Components";
+			sourceTree = "<group>";
+		};
+		0EDDED491779CF6000B7E790 /* MVSelectorScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				0EDDED4A1779CF6000B7E790 /* MVScrollerClipView.h */,
+				0EDDED4B1779CF6000B7E790 /* MVScrollerClipView.m */,
+				0EDDED4C1779CF6000B7E790 /* MVSelectorContentView.h */,
+				0EDDED4D1779CF6000B7E790 /* MVSelectorContentView.m */,
+				0EDDED4E1779CF6000B7E790 /* MVSelectorScrollView.h */,
+				0EDDED4F1779CF6000B7E790 /* MVSelectorScrollView.m */,
+				0EDDED501779CF6000B7E790 /* MVSelectorScrollView.xib */,
+				0EDDED511779CF6000B7E790 /* scroller_bg@2x.png */,
+				0EDDED521779CF6000B7E790 /* scroller_glass@2x.png */,
+			);
+			path = MVSelectorScrollView;
+			sourceTree = "<group>";
+		};
+		0EDDED591779CFDE00B7E790 /* CheckList Tab */ = {
+			isa = PBXGroup;
+			children = (
+				0EDDED5A1779CFEC00B7E790 /* CheckListMain */,
+			);
+			name = "CheckList Tab";
+			sourceTree = "<group>";
+		};
+		0EDDED5A1779CFEC00B7E790 /* CheckListMain */ = {
+			isa = PBXGroup;
+			children = (
+				0EDDED5B1779CFFE00B7E790 /* PJ_CheckListMainViewController.h */,
+				0EDDED5C1779CFFE00B7E790 /* PJ_CheckListMainViewController.m */,
+			);
+			name = CheckListMain;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -390,10 +472,13 @@
 				0EA052B2176CE9CB000D010D /* tabBar_cameraButton_ready_matte@2x.png in Resources */,
 				0EA052B1176CE9CB000D010D /* tabBar_cameraButton_ready_matte.png in Resources */,
 				0EA052B0176CE9CB000D010D /* camera_button_take@2x.png in Resources */,
+				0EDDED581779CF6000B7E790 /* scroller_glass@2x.png in Resources */,
 				0EA052AF176CE9CB000D010D /* camera_button_take.png in Resources */,
 				0E6B80D3176B3A8F0088A3FE /* Images.xcassets in Resources */,
+				0EDDED571779CF6000B7E790 /* scroller_bg@2x.png in Resources */,
 				0E6B80C5176B3A8F0088A3FE /* InfoPlist.strings in Resources */,
 				0E6B80CE176B3A8F0088A3FE /* Main.storyboard in Resources */,
+				0EDDED561779CF6000B7E790 /* MVSelectorScrollView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,13 +497,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EDDED541779CF6000B7E790 /* MVSelectorContentView.m in Sources */,
 				0EDDED461779C17B00B7E790 /* PJ_SettingsMainViewController.m in Sources */,
 				0E6B80CB176B3A8F0088A3FE /* PJ_AppDelegate.m in Sources */,
 				0E802C8D176B6C5A004466D4 /* PJ_LoginViewController.m in Sources */,
 				0EA0529D176CD9FC000D010D /* PJ_HomeFeedViewController.m in Sources */,
 				0EA05274176C85FF000D010D /* PJ_ProfieEditViewController.m in Sources */,
+				0EDDED531779CF6000B7E790 /* MVScrollerClipView.m in Sources */,
+				0E178B9E177AF510009C06D4 /* PJ_ChecklistModel.m in Sources */,
 				0E71DB1C176B85D900360759 /* PJ_SignUpViewController.m in Sources */,
+				0EDDED5D1779CFFE00B7E790 /* PJ_CheckListMainViewController.m in Sources */,
 				0E6B80C7176B3A8F0088A3FE /* main.m in Sources */,
+				0EDDED551779CF6000B7E790 /* MVSelectorScrollView.m in Sources */,
 				0EA052A1176CE8BE000D010D /* WBTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
