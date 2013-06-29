@@ -49,6 +49,8 @@
 		0EDDED571779CF6000B7E790 /* scroller_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EDDED511779CF6000B7E790 /* scroller_bg@2x.png */; };
 		0EDDED581779CF6000B7E790 /* scroller_glass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EDDED521779CF6000B7E790 /* scroller_glass@2x.png */; };
 		0EDDED5D1779CFFE00B7E790 /* PJ_CheckListMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED5C1779CFFE00B7E790 /* PJ_CheckListMainViewController.m */; };
+		69C9705A177E854300B06719 /* CG_NewPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C97059177E854300B06719 /* CG_NewPostViewController.m */; };
+		69C9705B177E854300B06719 /* CG_NewPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C97059177E854300B06719 /* CG_NewPostViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +120,8 @@
 		0EDDED521779CF6000B7E790 /* scroller_glass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scroller_glass@2x.png"; sourceTree = "<group>"; };
 		0EDDED5B1779CFFE00B7E790 /* PJ_CheckListMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_CheckListMainViewController.h; sourceTree = "<group>"; };
 		0EDDED5C1779CFFE00B7E790 /* PJ_CheckListMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_CheckListMainViewController.m; sourceTree = "<group>"; };
+		69C97058177E854300B06719 /* CG_NewPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CG_NewPostViewController.h; sourceTree = "<group>"; };
+		69C97059177E854300B06719 /* CG_NewPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CG_NewPostViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +217,7 @@
 		0E6B80C0176B3A8F0088A3FE /* cmypic */ = {
 			isa = PBXGroup;
 			children = (
+				69C97057177E84CA00B06719 /* NewPost Tab */,
 				0EDDED591779CFDE00B7E790 /* CheckList Tab */,
 				0EDDED481779CF2500B7E790 /* Additional Components */,
 				0EDDED421779C15400B7E790 /* Settings Tab */,
@@ -227,6 +232,7 @@
 				0E178B9A177AF4E8009C06D4 /* Models */,
 				0E6B80D2176B3A8F0088A3FE /* Images.xcassets */,
 				0EA0527C176CD98E000D010D /* Resources */,
+				69C9705C177ED9DB00B06719 /* iPad */,
 				0E6B80C1176B3A8F0088A3FE /* Supporting Files */,
 			);
 			path = cmypic;
@@ -392,6 +398,23 @@
 			name = CheckListMain;
 			sourceTree = "<group>";
 		};
+		69C97057177E84CA00B06719 /* NewPost Tab */ = {
+			isa = PBXGroup;
+			children = (
+				69C97058177E854300B06719 /* CG_NewPostViewController.h */,
+				69C97059177E854300B06719 /* CG_NewPostViewController.m */,
+			);
+			name = "NewPost Tab";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		69C9705C177ED9DB00B06719 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -506,6 +529,7 @@
 				0EDDED531779CF6000B7E790 /* MVScrollerClipView.m in Sources */,
 				0E178B9E177AF510009C06D4 /* PJ_ChecklistModel.m in Sources */,
 				0E71DB1C176B85D900360759 /* PJ_SignUpViewController.m in Sources */,
+				69C9705A177E854300B06719 /* CG_NewPostViewController.m in Sources */,
 				0EDDED5D1779CFFE00B7E790 /* PJ_CheckListMainViewController.m in Sources */,
 				0E6B80C7176B3A8F0088A3FE /* main.m in Sources */,
 				0EDDED551779CF6000B7E790 /* MVSelectorScrollView.m in Sources */,
@@ -519,6 +543,7 @@
 			files = (
 				0EDDED471779C17B00B7E790 /* PJ_SettingsMainViewController.m in Sources */,
 				0E6B80E6176B3A8F0088A3FE /* cmypicTests.m in Sources */,
+				69C9705B177E854300B06719 /* CG_NewPostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +658,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/cmypic",
@@ -640,7 +666,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cmypic/cmypic-Prefix.pch";
 				INFOPLIST_FILE = "cmypic/cmypic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -650,6 +678,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/cmypic",
@@ -657,7 +686,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cmypic/cmypic-Prefix.pch";
 				INFOPLIST_FILE = "cmypic/cmypic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
