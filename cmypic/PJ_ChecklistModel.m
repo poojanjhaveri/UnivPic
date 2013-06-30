@@ -7,6 +7,7 @@
 //
 
 #import "PJ_ChecklistModel.h"
+#import <Parse/Parse.h>
 
 @implementation PJ_ChecklistModel
 
@@ -25,13 +26,31 @@
 // lazy load
 - (NSMutableArray *) thingstodo {
     if (!_thingstodo) {
-       
-            _thingstodo = [[NSMutableArray alloc]
-                        initWithObjects:@"Yes!", @"No", @"Maybe",
-                        @"Can't decide", nil];
-        }
+        
+        _thingstodo = [[NSMutableArray alloc]
+                       initWithObjects:@"Yes!", @"No", @"Maybe",
+                       @"Can't decide", nil];
+    }
     
     return _thingstodo;
+}
+
+- (NSUInteger) addAnswer: (NSString *)answerText {
+    NSUInteger answerIndex = 0;
+    [self.thingstodo insertObject:answerText
+                          atIndex:answerIndex];
+    [self savetoserver:answerText];
+    return answerIndex;
+}
+
+-(void)savetoserver: (NSString *)itemtext
+{
+    NSLog(@"name is %@",itemtext);
+    PFObject *Item=[PFObject objectWithClassName:@"CheckList"];
+    [Item setObject:itemtext forKey:@"ListItem"];
+    // [Item setObject:FALSE forKey:@"Completed"];
+    [Item setObject:[PFUser currentUser] forKey:@"User"];
+    [Item saveInBackground];
 }
 
 

@@ -13,6 +13,7 @@
 @property(nonatomic,strong)NSMutableArray *thingstodo;
 @property(nonatomic,strong)NSMutableArray *thingsdone;
 
-
+- (NSUInteger) addAnswer: (NSString *)answerText;
 + (instancetype)sharedModel;
+-(void)savetoserver: (NSString *)item;
 @end

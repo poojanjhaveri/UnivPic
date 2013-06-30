@@ -8,6 +8,7 @@
 
 #import "PJ_CheckListMainViewController.h"
 #import "PJ_ChecklistModel.h"
+#import "PJ_AddItemToCheckListViewController.h"
 
 @interface PJ_CheckListMainViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -36,15 +37,36 @@
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
     
-   
+    
     /*
-    UISegmentedControl *statFilter = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"To be Created", @"Stored", nil]];
-    statFilter.frame=CGRectMake(0, 0, 100, 100);
-    [statFilter sizeToFit];
-    //[statFilter sizeToFit];
-    self.navigationItem.titleView = statFilter;
-    */
+     UISegmentedControl *statFilter = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"To be Created", @"Stored", nil]];
+     statFilter.frame=CGRectMake(0, 0, 100, 100);
+     [statFilter sizeToFit];
+     //[statFilter sizeToFit];
+     self.navigationItem.titleView = statFilter;
+     */
 }
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    PJ_AddItemToCheckListViewController *inputVC = segue.destinationViewController;
+    // completion block
+    inputVC.completionHandler = ^(NSString *text) {
+        if (text != nil) {
+            NSUInteger answerIndex = [self.model addAnswer:text];
+            NSIndexPath *indexPath = [NSIndexPath
+                                      indexPathForRow:answerIndex inSection:0];
+            [self.tableView insertRowsAtIndexPaths:@[indexPath]
+                                  withRowAnimation:UITableViewRowAnimationFade];
+        }
+        [self dismissViewControllerAnimated:YES completion:nil];
+    };
+}
+
+
+
+#pragma mark - UIButtons change
+
 
 - (IBAction)segmentControlChanged:(id)sender {
     UISegmentedControl *segment = (UISegmentedControl *)sender;
@@ -53,7 +75,7 @@
         self.addButton.enabled=YES;
     }
     else{
-                self.addButton.enabled=NO;
+        self.addButton.enabled=NO;
     }
 }
 
@@ -66,31 +88,19 @@
     if(self.editing)
         
     {
-        
-        [super setEditing:NO animated:NO];
-        
-        [self.tableView setEditing:NO animated:NO];
-        
-        [self.tableView reloadData];
-        
         self.editButton.title=@"Edit";
-        
-        
+        [super setEditing:NO animated:NO];
+        [self.tableView setEditing:NO animated:NO];
+        [self.tableView reloadData];
     }
     
     else
         
     {
-        self.editButton.title=@"DAFOD";
         [super setEditing:YES animated:YES];
-        
+        self.editButton.title=@"Done";
         [self.tableView setEditing:YES animated:YES];
-        
         [self.tableView reloadData];
-        
-        
-        NSLog(@"huh ahiyea choo");
-       
         
     }
 }
@@ -115,7 +125,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
- 
+    
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     // Configure the cell...
@@ -140,10 +150,10 @@
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-    //    [self.model removeAnswerAtIndex:indexPath.row];
+        //    [self.model removeAnswerAtIndex:indexPath.row];
         
         [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }

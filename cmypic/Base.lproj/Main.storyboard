@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="esX-c8-8Qw">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <development version="5000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
     </dependencies>
@@ -310,7 +310,7 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="PhotoMemory Checklist" id="4zw-Nr-aU5">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="edit" id="2TX-PK-krQ">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="2TX-PK-krQ">
                             <connections>
                                 <action selector="editButtonPressed:" destination="dpk-P2-Raz" id="Dz1-4i-Gcl"/>
                             </connections>
@@ -318,6 +318,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="qdx-X7-qef">
                             <connections>
                                 <action selector="addButtonPressed:" destination="dpk-P2-Raz" id="TW7-LW-AmB"/>
+                                <segue destination="qjf-wl-3SO" kind="modal" id="N7P-lz-eUr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -330,6 +331,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAj-2l-wQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5076" y="-68"/>
+        </scene>
+        <!--Add Item To Check List View Controller-->
+        <scene sceneID="SJH-Zd-ciN">
+            <objects>
+                <viewController id="qjf-wl-3SO" customClass="PJ_AddItemToCheckListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p2t-zg-n5y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y6N-VL-7uG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Add Item" id="rJY-PX-deV">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="1mg-Ee-vSM">
+                                            <connections>
+                                                <action selector="cancelButtonPressed:" destination="qjf-wl-3SO" id="jx0-q9-875"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add the memory you wish to create" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzC-Ei-U97">
+                                <rect key="frame" x="20" y="139" width="262" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CHi-wT-gIt">
+                                <rect key="frame" x="20" y="168" width="262" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="qjf-wl-3SO" id="1sL-4n-tkz"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="inputField" destination="CHi-wT-gIt" id="CGS-6h-Zip"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lxj-LV-HT5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5481" y="-68"/>
         </scene>
         <!--Settings Main View Controller - Settings-->
         <scene sceneID="utH-jR-wZP">
@@ -547,12 +597,65 @@
             <point key="canvasLocation" x="4586" y="2026"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="CG_NewPostViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CG_NewPostViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="saveNewPost:"/>
+                <relationship kind="outlet" name="postImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="postSegmentControl" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="postSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="postTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="PJ_AddItemToCheckListViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_AddItemToCheckListViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="inputField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="PJ_CheckListMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_CheckListMainViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="addButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="editButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="PJ_LoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_LoginViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="loginEmailAddress" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="loginPassword" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="PJ_ProfieEditViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_ProfieEditViewController.h"/>
+        </class>
+        <class className="PJ_SettingsMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_SettingsMainViewController.h"/>
+        </class>
+        <class className="PJ_SignUpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_SignUpViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="emailaddress" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="WBTabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WBTabBarController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="centerButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="plusController" candidateClass="UIViewController"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Iq5-L5-KUH"/>
+        <segue reference="T5U-Cv-tFX"/>
     </inferredMetricsTieBreakers>
 </document>

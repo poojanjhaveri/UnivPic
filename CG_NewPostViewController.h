@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 
+
 @interface CG_NewPostViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *postImageView;
