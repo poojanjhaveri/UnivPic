@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import "PJ_ChecklistModel.h"
 
 @interface PJ_AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property(strong,nonatomic) PJ_ChecklistModel *model;
 @end

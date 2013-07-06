@@ -8,6 +8,7 @@
 
 #import "PJ_AppDelegate.h"
 
+
 @implementation PJ_AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -23,6 +24,7 @@
      UIRemoteNotificationTypeAlert |
      UIRemoteNotificationTypeSound];
     
+    self.model=[PJ_ChecklistModel sharedModel];
     
     return YES;
 }

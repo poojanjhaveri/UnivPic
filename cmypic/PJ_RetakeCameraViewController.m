@@ -26,19 +26,20 @@
         self.cropSize = CGSizeMake(300,300);
         self.minimumScale = 0.2;
         self.maximumScale = 10;
-        
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         CG_NewPostViewController *viewController = ( CG_NewPostViewController *)[storyboard instantiateViewControllerWithIdentifier:@"NEWPOST"];
 
         self.doneCallback = ^(UIImage *editedImage, BOOL canceled){
             viewController.imagerecieved=editedImage;
-              [self.navigationController pushViewController:viewController animated:YES];
+        [self.navigationController pushViewController:viewController animated:YES];
         };
         
         
     }
     return self;
 }
+
+
 
 
 - (IBAction)retakeButtonPressed:(id)sender {

@@ -37,7 +37,7 @@
                 _thingstodo=[[getquery getFirstObject] objectForKey:@"CheckListArray"];
                 NSLog(@"Count is %d",[_thingstodo count]);
                 [[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshTableView" object:nil];
-               
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshPickerView" object:nil];
             }
             else{
                 

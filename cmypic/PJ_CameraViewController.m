@@ -36,7 +36,7 @@
 {
     [super viewDidLoad];
     _imagetosend=[[UIImage alloc] init];
-    self.navigationController.navigationBarHidden=YES;
+    
     
     _imagePickerController = [[UIImagePickerController alloc] init];
     _imagePickerController.modalPresentationStyle = UIModalPresentationCurrentContext;
@@ -54,10 +54,12 @@
     
 }
 
--(void)viewDidAppear:(BOOL)animated
+
+
+-(void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidAppear:YES];
-    [_imagePickerController setDelegate:self];
+    [super viewWillAppear:YES];
+    self.navigationController.navigationBarHidden=YES;
 }
 
 

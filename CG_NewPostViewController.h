@@ -11,7 +11,7 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 
 
-@interface CG_NewPostViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface CG_NewPostViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextViewDelegate,UIActionSheetDelegate,UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *postImageView;
 @property (weak, nonatomic) IBOutlet UITextView *postTextView;
@@ -25,5 +25,6 @@
 
 
 - (IBAction)saveNewPost:(id)sender;
-
+-(void)pickerCancel;
+-(void)pickerDone;
 @end
