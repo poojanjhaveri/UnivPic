@@ -67,6 +67,7 @@
 {
     [super viewDidAppear:NO];
     self.postImageView.image=self.imagerecieved;
+    UIImageWriteToSavedPhotosAlbum(postImageView.image, nil, nil, nil);
 }
 
 - (void)didReceiveMemoryWarning
@@ -173,7 +174,7 @@
     
     NSNumber *shareMode;
     postMsg = postTextView.text;
-    if(postSwitch.tag==0)
+    if(postSwitch.isOn==true)
         self.postIsTitle = [NSNumber numberWithBool:NO];
     else
         self.postIsTitle = [NSNumber numberWithBool:YES];
@@ -201,6 +202,10 @@
            // [photoObject setObject:smallImage forKey:@"thumbnail"];
             [photoObject save];
             UIAlertView *photoUploadStatus = [[UIAlertView alloc] initWithTitle:@"Post Status" message:@"Your image is posted" delegate:self.view cancelButtonTitle:@"Okay" otherButtonTitles: nil];
+            
+            
+            
+            
             [photoUploadStatus show];
             
         }

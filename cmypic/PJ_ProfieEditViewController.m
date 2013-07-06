@@ -30,6 +30,11 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)saveButtonPressed:(id)sender {
+    NSLog(@"%hhd",[[NSUserDefaults standardUserDefaults] boolForKey:@"wasLaunchedBefore"]);
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"wasLaunchedBefore"];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

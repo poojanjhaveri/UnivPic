@@ -66,7 +66,14 @@
             [PFUser logOut];
         }
         else{
-            [self performSegueWithIdentifier:@"LoginSuccessful" sender:self];
+            if (![[NSUserDefaults standardUserDefaults] boolForKey:@"wasLaunchedBefore"]) {
+                [self performSegueWithIdentifier:@"LoginSuccessful" sender:self];
+               
+            }
+            else
+            {
+            [self performSegueWithIdentifier:@"LoginToFeed" sender:self];
+            }
         }
         } else {
             //Something bad has ocurred

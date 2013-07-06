@@ -68,6 +68,10 @@
     return _thingstodo;
 }
 
+
+
+
+
 - (NSUInteger) addAnswer: (NSString *)answerText {
     NSUInteger answerIndex = 0;
     [self.thingstodo insertObject:answerText
