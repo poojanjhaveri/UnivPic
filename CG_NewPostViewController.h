@@ -11,7 +11,7 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 
 
-@interface CG_NewPostViewController : UIViewController
+@interface CG_NewPostViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *postImageView;
 @property (weak, nonatomic) IBOutlet UITextView *postTextView;
@@ -21,6 +21,7 @@
 @property (strong, nonatomic) PFFile* photoName;
 @property (strong, nonatomic) NSString *postMsg;
 @property (assign,nonatomic) NSNumber *postIsTitle;
+@property(strong,nonatomic)UIImage *imagerecieved;
 
 
 - (IBAction)saveNewPost:(id)sender;

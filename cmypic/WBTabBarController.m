@@ -26,6 +26,7 @@
 //
 
 #import "WBTabBarController.h"
+#import "CG_NewPostViewController.h"
 
 @interface WBTabBarController ()
 
@@ -48,6 +49,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.delegate=self;
 
     [self addCenterButtonWithImage:[UIImage imageNamed:@"camera_button_take.png"] highlightImage:[UIImage imageNamed:@"tabBar_cameraButton_ready_matte.png"] target:self action:@selector(buttonPressed:)];
 }
@@ -91,7 +93,14 @@
 {
     [self setSelectedIndex:2];
     [self performSelector:@selector(doHighlight:) withObject:sender afterDelay:0];
+    UIStoryboard * main =[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    CG_NewPostViewController *new = ( CG_NewPostViewController *)[main instantiateViewControllerWithIdentifier:@"CAMERAOVERLAY"];
+    [self presentViewController:new animated:YES completion:nil];
+    
 }
+
+
+
 
 - (void)doHighlight:(UIButton*)b {
     [b setHighlighted:YES];
@@ -111,6 +120,9 @@
 - (BOOL)tabBarHidden {
     return self.centerButton.hidden && self.tabBar.hidden;
 }
+
+
+
 
 - (void)setTabBarHidden:(BOOL)tabBarHidden
 {

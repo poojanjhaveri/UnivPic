@@ -8,6 +8,7 @@
 
 #import "PJ_ChecklistModel.h"
 #import <Parse/Parse.h>
+#import "PJ_CheckListMainViewController.h"
 
 @implementation PJ_ChecklistModel
 
@@ -27,11 +28,43 @@
 - (NSMutableArray *) thingstodo {
     if (!_thingstodo) {
         
-        _thingstodo = [[NSMutableArray alloc]
-                       initWithObjects:@"Yes!", @"No", @"Maybe",
-                       @"Can't decide", nil];
+        PFQuery *getquery =[PFQuery queryWithClassName:@"CheckList"];
+        [getquery whereKey:@"User" equalTo:[PFUser currentUser]];
+        [getquery getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) 
+        {
+            if(!error)
+            {
+                _thingstodo=[[getquery getFirstObject] objectForKey:@"CheckListArray"];
+                NSLog(@"Count is %d",[_thingstodo count]);
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshTableView" object:nil];
+               
+            }
+            else{
+                
+                _thingstodo=[[NSMutableArray alloc] initWithObjects: @"#FirstUSCFootballGame",nil];
+               
+                PFObject *Item=[PFObject objectWithClassName:@"CheckList" ];
+                [Item addObject:@"#FirstUSCFootballGame" forKey:@"CheckListArray"];
+                [Item setObject:[PFUser currentUser] forKey:@"User"];
+                
+                [Item saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                    if (!error) {
+                        //The registration was successful, go to the wall
+                        NSLog(@"Checklist array successfully added for first time");
+                    } else {
+                        //Something bad has occurred
+                        NSString *errorString = [[error userInfo] objectForKey:@"Please Check your connection. Unable to save the checklist array"];
+                        UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                        [errorAlertView show];
+                    }
+                }];
+                
+            }
+            
+        }];         
     }
     
+
     return _thingstodo;
 }
 
@@ -46,12 +79,31 @@
 -(void)savetoserver: (NSString *)itemtext
 {
     NSLog(@"name is %@",itemtext);
-    PFObject *Item=[PFObject objectWithClassName:@"CheckList"];
-    [Item setObject:itemtext forKey:@"ListItem"];
-    // [Item setObject:FALSE forKey:@"Completed"];
-    [Item setObject:[PFUser currentUser] forKey:@"User"];
-    [Item saveInBackground];
-}
+    
+    PFQuery *getquery =[PFQuery queryWithClassName:@"CheckList"];
+    [getquery whereKey:@"User" equalTo:[PFUser currentUser]];
+    [getquery getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        if(!error)
+        {
+            PFObject *item=object;
+            [item addObject:itemtext forKey:@"CheckListArray"];
+            [item saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if (!error) {
+                    //The registration was successful, go to the wall
+                    NSLog(@"Checklist array successfully added");
+                } else {
+                    //Something bad has occurred
+                    NSString *errorString = [[error userInfo] objectForKey:@"Please Check your connection. Unable to save the checklist array"];
+                    UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                    [errorAlertView show];
+                }
+            }];
+
+            
+        }
+    }];
+
+    }
 
 
 @end

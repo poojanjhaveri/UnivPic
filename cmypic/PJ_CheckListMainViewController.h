@@ -11,7 +11,7 @@
 
 @interface PJ_CheckListMainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 {
- NSMutableArray *arry;
-}
 
+}
+- (void)refreshTableView;
 @end

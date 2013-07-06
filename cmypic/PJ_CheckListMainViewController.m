@@ -33,6 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshTableView) name:@"RefreshTableView" object:nil];
     self.model=[PJ_ChecklistModel sharedModel];
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
@@ -108,6 +109,13 @@
 
 
 #pragma mark - Table view data source
+
+- (void)refreshTableView
+{
+    self.model=[PJ_ChecklistModel sharedModel];
+    [self.tableView reloadData];
+}
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E178B9E177AF510009C06D4 /* PJ_ChecklistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E178B9D177AF510009C06D4 /* PJ_ChecklistModel.m */; };
+		0E40E43D1782E90400A75B6D /* PJ_CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E40E43C1782E90400A75B6D /* PJ_CameraViewController.m */; };
 		0E6B80BB176B3A8F0088A3FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6B80BA176B3A8F0088A3FE /* Foundation.framework */; };
 		0E6B80BD176B3A8F0088A3FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6B80BC176B3A8F0088A3FE /* CoreGraphics.framework */; };
 		0E6B80BF176B3A8F0088A3FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6B80BE176B3A8F0088A3FE /* UIKit.framework */; };
@@ -22,6 +23,7 @@
 		0E6B80E4176B3A8F0088A3FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E6B80E2176B3A8F0088A3FE /* InfoPlist.strings */; };
 		0E6B80E6176B3A8F0088A3FE /* cmypicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6B80E5176B3A8F0088A3FE /* cmypicTests.m */; };
 		0E71DB1C176B85D900360759 /* PJ_SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E71DB1B176B85D900360759 /* PJ_SignUpViewController.m */; };
+		0E7BC41717856AF4001AFC8D /* PJ_RetakeCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7BC41617856AF4001AFC8D /* PJ_RetakeCameraViewController.m */; };
 		0E802C77176B3F5C004466D4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E802C76176B3F5C004466D4 /* Parse.framework */; };
 		0E802C79176B3F9A004466D4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E802C78176B3F9A004466D4 /* AudioToolbox.framework */; };
 		0E802C7B176B3FA2004466D4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E802C7A176B3FA2004466D4 /* CFNetwork.framework */; };
@@ -40,7 +42,12 @@
 		0EA052B0176CE9CB000D010D /* camera_button_take@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EA052AC176CE9CB000D010D /* camera_button_take@2x.png */; };
 		0EA052B1176CE9CB000D010D /* tabBar_cameraButton_ready_matte.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EA052AD176CE9CB000D010D /* tabBar_cameraButton_ready_matte.png */; };
 		0EA052B2176CE9CB000D010D /* tabBar_cameraButton_ready_matte@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EA052AE176CE9CB000D010D /* tabBar_cameraButton_ready_matte@2x.png */; };
+		0EA2CF941786F924006AC1A0 /* Scale.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EA2CF931786F924006AC1A0 /* Scale.xib */; };
 		0EA657E41780978D00A28DA7 /* PJ_AddItemToCheckListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA657E31780978D00A28DA7 /* PJ_AddItemToCheckListViewController.m */; };
+		0EC5457E1782C83B002BC375 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC5457D1782C83B002BC375 /* CoreMedia.framework */; };
+		0EC545801782C843002BC375 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC5457F1782C843002BC375 /* CoreVideo.framework */; };
+		0EC545821782C84A002BC375 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC545811782C84A002BC375 /* AVFoundation.framework */; };
+		0EC545841782C851002BC375 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC545831782C851002BC375 /* ImageIO.framework */; };
 		0EDDED461779C17B00B7E790 /* PJ_SettingsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED451779C17B00B7E790 /* PJ_SettingsMainViewController.m */; };
 		0EDDED471779C17B00B7E790 /* PJ_SettingsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED451779C17B00B7E790 /* PJ_SettingsMainViewController.m */; };
 		0EDDED531779CF6000B7E790 /* MVScrollerClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED4B1779CF6000B7E790 /* MVScrollerClipView.m */; };
@@ -50,6 +57,8 @@
 		0EDDED571779CF6000B7E790 /* scroller_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EDDED511779CF6000B7E790 /* scroller_bg@2x.png */; };
 		0EDDED581779CF6000B7E790 /* scroller_glass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EDDED521779CF6000B7E790 /* scroller_glass@2x.png */; };
 		0EDDED5D1779CFFE00B7E790 /* PJ_CheckListMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED5C1779CFFE00B7E790 /* PJ_CheckListMainViewController.m */; };
+		0EEC27BC1785D6F400DBA248 /* HFImageEditorFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC27B81785D6F400DBA248 /* HFImageEditorFrameView.m */; };
+		0EEC27BD1785D6F400DBA248 /* HFImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC27BB1785D6F400DBA248 /* HFImageEditorViewController.m */; };
 		69C9705A177E854300B06719 /* CG_NewPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C97059177E854300B06719 /* CG_NewPostViewController.m */; };
 		69C9705B177E854300B06719 /* CG_NewPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C97059177E854300B06719 /* CG_NewPostViewController.m */; };
 /* End PBXBuildFile section */
@@ -67,6 +76,8 @@
 /* Begin PBXFileReference section */
 		0E178B9C177AF510009C06D4 /* PJ_ChecklistModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_ChecklistModel.h; sourceTree = "<group>"; };
 		0E178B9D177AF510009C06D4 /* PJ_ChecklistModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_ChecklistModel.m; sourceTree = "<group>"; };
+		0E40E43B1782E90400A75B6D /* PJ_CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_CameraViewController.h; sourceTree = "<group>"; };
+		0E40E43C1782E90400A75B6D /* PJ_CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_CameraViewController.m; sourceTree = "<group>"; };
 		0E6B80B7176B3A8F0088A3FE /* cmypic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cmypic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6B80BA176B3A8F0088A3FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0E6B80BC176B3A8F0088A3FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +97,8 @@
 		0E6B80E5176B3A8F0088A3FE /* cmypicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cmypicTests.m; sourceTree = "<group>"; };
 		0E71DB1A176B85D900360759 /* PJ_SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_SignUpViewController.h; sourceTree = "<group>"; };
 		0E71DB1B176B85D900360759 /* PJ_SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_SignUpViewController.m; sourceTree = "<group>"; };
+		0E7BC41517856AF4001AFC8D /* PJ_RetakeCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_RetakeCameraViewController.h; sourceTree = "<group>"; };
+		0E7BC41617856AF4001AFC8D /* PJ_RetakeCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_RetakeCameraViewController.m; sourceTree = "<group>"; };
 		0E802C76176B3F5C004466D4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		0E802C78176B3F9A004466D4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		0E802C7A176B3FA2004466D4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -108,8 +121,13 @@
 		0EA052AC176CE9CB000D010D /* camera_button_take@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_button_take@2x.png"; sourceTree = "<group>"; };
 		0EA052AD176CE9CB000D010D /* tabBar_cameraButton_ready_matte.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar_cameraButton_ready_matte.png; sourceTree = "<group>"; };
 		0EA052AE176CE9CB000D010D /* tabBar_cameraButton_ready_matte@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_cameraButton_ready_matte@2x.png"; sourceTree = "<group>"; };
+		0EA2CF931786F924006AC1A0 /* Scale.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Scale.xib; sourceTree = "<group>"; };
 		0EA657E21780978D00A28DA7 /* PJ_AddItemToCheckListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_AddItemToCheckListViewController.h; sourceTree = "<group>"; };
 		0EA657E31780978D00A28DA7 /* PJ_AddItemToCheckListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_AddItemToCheckListViewController.m; sourceTree = "<group>"; };
+		0EC5457D1782C83B002BC375 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0EC5457F1782C843002BC375 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		0EC545811782C84A002BC375 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0EC545831782C851002BC375 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		0EDDED441779C17B00B7E790 /* PJ_SettingsMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_SettingsMainViewController.h; sourceTree = "<group>"; };
 		0EDDED451779C17B00B7E790 /* PJ_SettingsMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_SettingsMainViewController.m; sourceTree = "<group>"; };
 		0EDDED4A1779CF6000B7E790 /* MVScrollerClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVScrollerClipView.h; sourceTree = "<group>"; };
@@ -123,6 +141,11 @@
 		0EDDED521779CF6000B7E790 /* scroller_glass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scroller_glass@2x.png"; sourceTree = "<group>"; };
 		0EDDED5B1779CFFE00B7E790 /* PJ_CheckListMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_CheckListMainViewController.h; sourceTree = "<group>"; };
 		0EDDED5C1779CFFE00B7E790 /* PJ_CheckListMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_CheckListMainViewController.m; sourceTree = "<group>"; };
+		0EEC27B71785D6F400DBA248 /* HFImageEditorFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFImageEditorFrameView.h; sourceTree = "<group>"; };
+		0EEC27B81785D6F400DBA248 /* HFImageEditorFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFImageEditorFrameView.m; sourceTree = "<group>"; };
+		0EEC27B91785D6F400DBA248 /* HFImageEditorViewController+SubclassingHooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HFImageEditorViewController+SubclassingHooks.h"; sourceTree = "<group>"; };
+		0EEC27BA1785D6F400DBA248 /* HFImageEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFImageEditorViewController.h; sourceTree = "<group>"; };
+		0EEC27BB1785D6F400DBA248 /* HFImageEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFImageEditorViewController.m; sourceTree = "<group>"; };
 		69C97058177E854300B06719 /* CG_NewPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CG_NewPostViewController.h; sourceTree = "<group>"; };
 		69C97059177E854300B06719 /* CG_NewPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CG_NewPostViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,10 +155,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E802C83176B4015004466D4 /* QuartzCore.framework in Frameworks */,
+				0EC545841782C851002BC375 /* ImageIO.framework in Frameworks */,
+				0EC545821782C84A002BC375 /* AVFoundation.framework in Frameworks */,
+				0EC545801782C843002BC375 /* CoreVideo.framework in Frameworks */,
+				0EC5457E1782C83B002BC375 /* CoreMedia.framework in Frameworks */,
 				0E802C89176B402A004466D4 /* SystemConfiguration.framework in Frameworks */,
 				0E802C87176B4022004466D4 /* StoreKit.framework in Frameworks */,
 				0E802C85176B401B004466D4 /* Security.framework in Frameworks */,
-				0E802C83176B4015004466D4 /* QuartzCore.framework in Frameworks */,
 				0E802C81176B400E004466D4 /* MobileCoreServices.framework in Frameworks */,
 				0E802C7F176B4007004466D4 /* libz.1.1.3.dylib in Frameworks */,
 				0E802C7D176B3FFD004466D4 /* CoreLocation.framework in Frameworks */,
@@ -200,6 +227,10 @@
 		0E6B80B9176B3A8F0088A3FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0EC545831782C851002BC375 /* ImageIO.framework */,
+				0EC545811782C84A002BC375 /* AVFoundation.framework */,
+				0EC5457F1782C843002BC375 /* CoreVideo.framework */,
+				0EC5457D1782C83B002BC375 /* CoreMedia.framework */,
 				0E802C88176B402A004466D4 /* SystemConfiguration.framework */,
 				0E802C86176B4022004466D4 /* StoreKit.framework */,
 				0E802C84176B401B004466D4 /* Security.framework */,
@@ -220,6 +251,8 @@
 		0E6B80C0176B3A8F0088A3FE /* cmypic */ = {
 			isa = PBXGroup;
 			children = (
+				0E7BC41417856AD4001AFC8D /* RetakeScale */,
+				0E926E041781A3EF0009617B /* Camera */,
 				69C97057177E84CA00B06719 /* NewPost Tab */,
 				0EDDED591779CFDE00B7E790 /* CheckList Tab */,
 				0EDDED481779CF2500B7E790 /* Additional Components */,
@@ -279,6 +312,16 @@
 			name = SignUp;
 			sourceTree = "<group>";
 		};
+		0E7BC41417856AD4001AFC8D /* RetakeScale */ = {
+			isa = PBXGroup;
+			children = (
+				0E7BC41517856AF4001AFC8D /* PJ_RetakeCameraViewController.h */,
+				0E7BC41617856AF4001AFC8D /* PJ_RetakeCameraViewController.m */,
+				0EA2CF931786F924006AC1A0 /* Scale.xib */,
+			);
+			name = RetakeScale;
+			sourceTree = "<group>";
+		};
 		0E802C75176B3F40004466D4 /* Parse */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +337,15 @@
 				0E802C8C176B6C5A004466D4 /* PJ_LoginViewController.m */,
 			);
 			name = LoginView;
+			sourceTree = "<group>";
+		};
+		0E926E041781A3EF0009617B /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				0E40E43B1782E90400A75B6D /* PJ_CameraViewController.h */,
+				0E40E43C1782E90400A75B6D /* PJ_CameraViewController.m */,
+			);
+			name = Camera;
 			sourceTree = "<group>";
 		};
 		0EA0526E176C84DA000D010D /* ProfileEdit and FirstTimeSetting */ = {
@@ -371,6 +423,7 @@
 		0EDDED481779CF2500B7E790 /* Additional Components */ = {
 			isa = PBXGroup;
 			children = (
+				0EEC27B61785D6F400DBA248 /* ImageEditor */,
 				0EDDED491779CF6000B7E790 /* MVSelectorScrollView */,
 				0EA0529E176CE89D000D010D /* CustomTabBar */,
 			);
@@ -409,6 +462,18 @@
 				0EDDED5C1779CFFE00B7E790 /* PJ_CheckListMainViewController.m */,
 			);
 			name = CheckListMain;
+			sourceTree = "<group>";
+		};
+		0EEC27B61785D6F400DBA248 /* ImageEditor */ = {
+			isa = PBXGroup;
+			children = (
+				0EEC27B71785D6F400DBA248 /* HFImageEditorFrameView.h */,
+				0EEC27B81785D6F400DBA248 /* HFImageEditorFrameView.m */,
+				0EEC27B91785D6F400DBA248 /* HFImageEditorViewController+SubclassingHooks.h */,
+				0EEC27BA1785D6F400DBA248 /* HFImageEditorViewController.h */,
+				0EEC27BB1785D6F400DBA248 /* HFImageEditorViewController.m */,
+			);
+			path = ImageEditor;
 			sourceTree = "<group>";
 		};
 		69C97057177E84CA00B06719 /* NewPost Tab */ = {
@@ -513,6 +578,7 @@
 				0EA052B0176CE9CB000D010D /* camera_button_take@2x.png in Resources */,
 				0EDDED581779CF6000B7E790 /* scroller_glass@2x.png in Resources */,
 				0EA052AF176CE9CB000D010D /* camera_button_take.png in Resources */,
+				0EA2CF941786F924006AC1A0 /* Scale.xib in Resources */,
 				0E6B80D3176B3A8F0088A3FE /* Images.xcassets in Resources */,
 				0EDDED571779CF6000B7E790 /* scroller_bg@2x.png in Resources */,
 				0E6B80C5176B3A8F0088A3FE /* InfoPlist.strings in Resources */,
@@ -537,10 +603,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EA657E41780978D00A28DA7 /* PJ_AddItemToCheckListViewController.m in Sources */,
+				0EEC27BC1785D6F400DBA248 /* HFImageEditorFrameView.m in Sources */,
 				0EDDED541779CF6000B7E790 /* MVSelectorContentView.m in Sources */,
 				0EDDED461779C17B00B7E790 /* PJ_SettingsMainViewController.m in Sources */,
 				0E6B80CB176B3A8F0088A3FE /* PJ_AppDelegate.m in Sources */,
 				0E802C8D176B6C5A004466D4 /* PJ_LoginViewController.m in Sources */,
+				0E40E43D1782E90400A75B6D /* PJ_CameraViewController.m in Sources */,
+				0EEC27BD1785D6F400DBA248 /* HFImageEditorViewController.m in Sources */,
 				0EA0529D176CD9FC000D010D /* PJ_HomeFeedViewController.m in Sources */,
 				0EA05274176C85FF000D010D /* PJ_ProfieEditViewController.m in Sources */,
 				0EDDED531779CF6000B7E790 /* MVScrollerClipView.m in Sources */,
@@ -548,6 +617,7 @@
 				0E71DB1C176B85D900360759 /* PJ_SignUpViewController.m in Sources */,
 				69C9705A177E854300B06719 /* CG_NewPostViewController.m in Sources */,
 				0EDDED5D1779CFFE00B7E790 /* PJ_CheckListMainViewController.m in Sources */,
+				0E7BC41717856AF4001AFC8D /* PJ_RetakeCameraViewController.m in Sources */,
 				0E6B80C7176B3A8F0088A3FE /* main.m in Sources */,
 				0EDDED551779CF6000B7E790 /* MVSelectorScrollView.m in Sources */,
 				0EA052A1176CE8BE000D010D /* WBTabBarController.m in Sources */,
@@ -688,7 +758,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cmypic/cmypic-Prefix.pch";
 				INFOPLIST_FILE = "cmypic/cmypic-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "18C818E8-F0FF-46E4-B0D2-660DC1B724A6";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -710,7 +780,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cmypic/cmypic-Prefix.pch";
 				INFOPLIST_FILE = "cmypic/cmypic-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "18C818E8-F0FF-46E4-B0D2-660DC1B724A6";
 				TARGETED_DEVICE_FAMILY = 1;

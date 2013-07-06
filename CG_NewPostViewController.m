@@ -8,6 +8,7 @@
 
 #import "CG_NewPostViewController.h"
 
+
 @interface CG_NewPostViewController ()
 @property (nonatomic, strong) PFObject *photoObject;
 //@property (nonatomic, strong) SMMPhotoDataModel *photoDataModel;
@@ -34,11 +35,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationController.navigationBarHidden=false;
+    self.navigationItem.title=@"Share";
 	// Do any additional setup after loading the view.
-    [self showCamera];
+     self.postImageView.image=self.imagerecieved;
     UITapGestureRecognizer * singleTapRecogniser = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapRecognized:)];
     [self.view addGestureRecognizer:singleTapRecogniser];
+    //[self showCamera];
+}
 
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:YES];
+    self.postImageView.image=self.imagerecieved;
 }
 
 - (void)didReceiveMemoryWarning
@@ -97,45 +107,10 @@
     
 }
 
-- (void)showCamera {
-    [self openCamerafromMainController: self
-                         usingDelegate: self];
-}
 
-
-
--(BOOL) openCamerafromMainController: (UIViewController *) controller usingDelegate: (id <UIImagePickerControllerDelegate, UINavigationControllerDelegate>) delegate{
-    
-    if([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeCamera] == NO || (delegate==nil) || (controller ==Nil)){
-        return NO;
-    }
-    
-    
-    
-    UIImagePickerController *cameraView = [[UIImagePickerController alloc] init];
-    [cameraView setSourceType: UIImagePickerControllerSourceTypeCamera];
-    
-    cameraView.mediaTypes = [[NSArray alloc] initWithObjects: (NSString *) kUTTypeImage, nil];
-    
-    cameraView.delegate = delegate;
-    
-    [controller presentViewController:cameraView animated:YES completion:nil];
-    
-    return YES;
-}
-
-- (void) imagePickerControllerDidCancel:(UIImagePickerController *)picker{
-    [self dismissViewControllerAnimated:YES completion:nil];
-    //UIViewController *controller = [[UIViewController alloc] init];
-    //[self presentViewController:self. animated:YES completion:nil];
-    //[self loadView ];
-    NSLog(@"dismiss");
-    //[picker release];
-}
 
 -(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    
     NSString *mediaType =[info objectForKey: UIImagePickerControllerMediaType];
     UIImage *originalImage, *editedImage;
     if(CFStringCompare((CFStringRef) mediaType, kUTTypeImage, 0) ==kCFCompareEqualTo)
@@ -152,7 +127,6 @@
         }
         
         UIImageWriteToSavedPhotosAlbum(postImageView.image, nil, nil, nil);
-        
     }
     
     // Resize image
@@ -169,6 +143,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
+
 
 
 @end

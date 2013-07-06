@@ -27,7 +27,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WBTabBarController : UITabBarController
+@interface WBTabBarController : UITabBarController<UITabBarControllerDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property(nonatomic, weak) IBOutlet UIViewController *plusController;
 @property(nonatomic, weak) IBOutlet UIButton *centerButton;
