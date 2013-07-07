@@ -30,6 +30,9 @@
     return self;
 }
 
+
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -68,17 +71,6 @@
 
 #pragma mark - UIButtons change
 
-
-- (IBAction)segmentControlChanged:(id)sender {
-    UISegmentedControl *segment = (UISegmentedControl *)sender;
-    if(segment.selectedSegmentIndex==0)
-    {
-        self.addButton.enabled=YES;
-    }
-    else{
-        self.addButton.enabled=NO;
-    }
-}
 
 
 - (IBAction)addButtonPressed:(id)sender {

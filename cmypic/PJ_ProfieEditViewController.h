@@ -10,5 +10,4 @@
 #import <Parse/Parse.h>
 
 @interface PJ_ProfieEditViewController : UIViewController
-
 @end

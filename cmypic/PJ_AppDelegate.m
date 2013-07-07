@@ -25,6 +25,7 @@
      UIRemoteNotificationTypeSound];
     
     self.model=[PJ_ChecklistModel sharedModel];
+
     
     return YES;
 }

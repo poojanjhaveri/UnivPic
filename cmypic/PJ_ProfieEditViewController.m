@@ -9,7 +9,7 @@
 #import "PJ_ProfieEditViewController.h"
 
 @interface PJ_ProfieEditViewController ()
-
+@property(nonatomic,weak)IBOutlet UITableView *tableView;
 @end
 
 @implementation PJ_ProfieEditViewController
