@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface PJ_ProfieEditViewController : UIViewController
+@interface PJ_ProfieEditViewController : UIViewController<UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate>
 @end

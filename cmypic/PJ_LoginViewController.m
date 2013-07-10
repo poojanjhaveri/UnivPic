@@ -40,17 +40,17 @@
     [super viewDidAppear:NO];
     if ([PFUser currentUser])
     {
-       // [self performSegueWithIdentifier:@"LoginSuccessful" sender:self];
+        [self performSegueWithIdentifier:@"LoginSuccessful" sender:self];
         // Dont delete this
        
-        if (![[NSUserDefaults standardUserDefaults] boolForKey:@"wasLaunchedBefore"]) {
+    /*    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"wasLaunchedBefore"]) {
             [self performSegueWithIdentifier:@"LoginSuccessful" sender:self];
             
         }
         else
         {
             [self performSegueWithIdentifier:@"LoginToFeed" sender:self];
-        }
+        }*/
 
     }
 }

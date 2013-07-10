@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E178B9E177AF510009C06D4 /* PJ_ChecklistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E178B9D177AF510009C06D4 /* PJ_ChecklistModel.m */; };
 		0E40E43D1782E90400A75B6D /* PJ_CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E40E43C1782E90400A75B6D /* PJ_CameraViewController.m */; };
+		0E4FD496178DC7470076BC00 /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E4FD495178DC7470076BC00 /* photo.jpg */; };
 		0E6B80BB176B3A8F0088A3FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6B80BA176B3A8F0088A3FE /* Foundation.framework */; };
 		0E6B80BD176B3A8F0088A3FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6B80BC176B3A8F0088A3FE /* CoreGraphics.framework */; };
 		0E6B80BF176B3A8F0088A3FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6B80BE176B3A8F0088A3FE /* UIKit.framework */; };
@@ -35,6 +36,14 @@
 		0E802C87176B4022004466D4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E802C86176B4022004466D4 /* StoreKit.framework */; };
 		0E802C89176B402A004466D4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E802C88176B402A004466D4 /* SystemConfiguration.framework */; };
 		0E802C8D176B6C5A004466D4 /* PJ_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E802C8C176B6C5A004466D4 /* PJ_LoginViewController.m */; };
+		0E984DB5178DEC5F007C1C44 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E984DAE178DEC5E007C1C44 /* UIImage+Alpha.m */; };
+		0E984DB6178DEC5F007C1C44 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E984DAE178DEC5E007C1C44 /* UIImage+Alpha.m */; };
+		0E984DB7178DEC5F007C1C44 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E984DB0178DEC5E007C1C44 /* UIImage+AlphaAdditions.m */; };
+		0E984DB8178DEC5F007C1C44 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E984DB0178DEC5E007C1C44 /* UIImage+AlphaAdditions.m */; };
+		0E984DB9178DEC5F007C1C44 /* UIImage+ResizeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E984DB2178DEC5E007C1C44 /* UIImage+ResizeAdditions.m */; };
+		0E984DBA178DEC5F007C1C44 /* UIImage+ResizeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E984DB2178DEC5E007C1C44 /* UIImage+ResizeAdditions.m */; };
+		0E984DBB178DEC5F007C1C44 /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E984DB4178DEC5F007C1C44 /* UIImage+RoundedCornerAdditions.m */; };
+		0E984DBC178DEC5F007C1C44 /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E984DB4178DEC5F007C1C44 /* UIImage+RoundedCornerAdditions.m */; };
 		0EA05274176C85FF000D010D /* PJ_ProfieEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA05273176C85FF000D010D /* PJ_ProfieEditViewController.m */; };
 		0EA0529D176CD9FC000D010D /* PJ_HomeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0529C176CD9FC000D010D /* PJ_HomeFeedViewController.m */; };
 		0EA052A1176CE8BE000D010D /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA052A0176CE8BE000D010D /* WBTabBarController.m */; };
@@ -78,6 +87,7 @@
 		0E178B9D177AF510009C06D4 /* PJ_ChecklistModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_ChecklistModel.m; sourceTree = "<group>"; };
 		0E40E43B1782E90400A75B6D /* PJ_CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_CameraViewController.h; sourceTree = "<group>"; };
 		0E40E43C1782E90400A75B6D /* PJ_CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_CameraViewController.m; sourceTree = "<group>"; };
+		0E4FD495178DC7470076BC00 /* photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpg; sourceTree = "<group>"; };
 		0E6B80B7176B3A8F0088A3FE /* cmypic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cmypic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6B80BA176B3A8F0088A3FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0E6B80BC176B3A8F0088A3FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -111,6 +121,14 @@
 		0E802C88176B402A004466D4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0E802C8B176B6C5A004466D4 /* PJ_LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_LoginViewController.h; sourceTree = "<group>"; };
 		0E802C8C176B6C5A004466D4 /* PJ_LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_LoginViewController.m; sourceTree = "<group>"; };
+		0E984DAE178DEC5E007C1C44 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		0E984DAF178DEC5E007C1C44 /* UIImage+AlphaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AlphaAdditions.h"; sourceTree = "<group>"; };
+		0E984DB0178DEC5E007C1C44 /* UIImage+AlphaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AlphaAdditions.m"; sourceTree = "<group>"; };
+		0E984DB1178DEC5E007C1C44 /* UIImage+ResizeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeAdditions.h"; sourceTree = "<group>"; };
+		0E984DB2178DEC5E007C1C44 /* UIImage+ResizeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeAdditions.m"; sourceTree = "<group>"; };
+		0E984DB3178DEC5E007C1C44 /* UIImage+RoundedCornerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCornerAdditions.h"; sourceTree = "<group>"; };
+		0E984DB4178DEC5F007C1C44 /* UIImage+RoundedCornerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCornerAdditions.m"; sourceTree = "<group>"; };
+		0E984DBE178DECBC007C1C44 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
 		0EA05272176C85FF000D010D /* PJ_ProfieEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_ProfieEditViewController.h; sourceTree = "<group>"; };
 		0EA05273176C85FF000D010D /* PJ_ProfieEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_ProfieEditViewController.m; sourceTree = "<group>"; };
 		0EA0529B176CD9FC000D010D /* PJ_HomeFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_HomeFeedViewController.h; sourceTree = "<group>"; };
@@ -348,6 +366,21 @@
 			name = Camera;
 			sourceTree = "<group>";
 		};
+		0E984DBD178DEC64007C1C44 /* UIIMAGE categories */ = {
+			isa = PBXGroup;
+			children = (
+				0E984DBE178DECBC007C1C44 /* UIImage+Alpha.h */,
+				0E984DAE178DEC5E007C1C44 /* UIImage+Alpha.m */,
+				0E984DAF178DEC5E007C1C44 /* UIImage+AlphaAdditions.h */,
+				0E984DB0178DEC5E007C1C44 /* UIImage+AlphaAdditions.m */,
+				0E984DB1178DEC5E007C1C44 /* UIImage+ResizeAdditions.h */,
+				0E984DB2178DEC5E007C1C44 /* UIImage+ResizeAdditions.m */,
+				0E984DB3178DEC5E007C1C44 /* UIImage+RoundedCornerAdditions.h */,
+				0E984DB4178DEC5F007C1C44 /* UIImage+RoundedCornerAdditions.m */,
+			);
+			name = "UIIMAGE categories";
+			sourceTree = "<group>";
+		};
 		0EA0526E176C84DA000D010D /* ProfileEdit and FirstTimeSetting */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +393,7 @@
 		0EA0527C176CD98E000D010D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0E4FD495178DC7470076BC00 /* photo.jpg */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -423,6 +457,7 @@
 		0EDDED481779CF2500B7E790 /* Additional Components */ = {
 			isa = PBXGroup;
 			children = (
+				0E984DBD178DEC64007C1C44 /* UIIMAGE categories */,
 				0EEC27B61785D6F400DBA248 /* ImageEditor */,
 				0EDDED491779CF6000B7E790 /* MVSelectorScrollView */,
 				0EA0529E176CE89D000D010D /* CustomTabBar */,
@@ -575,6 +610,7 @@
 			files = (
 				0EA052B2176CE9CB000D010D /* tabBar_cameraButton_ready_matte@2x.png in Resources */,
 				0EA052B1176CE9CB000D010D /* tabBar_cameraButton_ready_matte.png in Resources */,
+				0E4FD496178DC7470076BC00 /* photo.jpg in Resources */,
 				0EA052B0176CE9CB000D010D /* camera_button_take@2x.png in Resources */,
 				0EDDED581779CF6000B7E790 /* scroller_glass@2x.png in Resources */,
 				0EA052AF176CE9CB000D010D /* camera_button_take.png in Resources */,
@@ -603,19 +639,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EA657E41780978D00A28DA7 /* PJ_AddItemToCheckListViewController.m in Sources */,
+				0E984DBB178DEC5F007C1C44 /* UIImage+RoundedCornerAdditions.m in Sources */,
 				0EEC27BC1785D6F400DBA248 /* HFImageEditorFrameView.m in Sources */,
 				0EDDED541779CF6000B7E790 /* MVSelectorContentView.m in Sources */,
 				0EDDED461779C17B00B7E790 /* PJ_SettingsMainViewController.m in Sources */,
 				0E6B80CB176B3A8F0088A3FE /* PJ_AppDelegate.m in Sources */,
 				0E802C8D176B6C5A004466D4 /* PJ_LoginViewController.m in Sources */,
 				0E40E43D1782E90400A75B6D /* PJ_CameraViewController.m in Sources */,
+				0E984DB9178DEC5F007C1C44 /* UIImage+ResizeAdditions.m in Sources */,
 				0EEC27BD1785D6F400DBA248 /* HFImageEditorViewController.m in Sources */,
+				0E984DB5178DEC5F007C1C44 /* UIImage+Alpha.m in Sources */,
 				0EA0529D176CD9FC000D010D /* PJ_HomeFeedViewController.m in Sources */,
 				0EA05274176C85FF000D010D /* PJ_ProfieEditViewController.m in Sources */,
 				0EDDED531779CF6000B7E790 /* MVScrollerClipView.m in Sources */,
 				0E178B9E177AF510009C06D4 /* PJ_ChecklistModel.m in Sources */,
 				0E71DB1C176B85D900360759 /* PJ_SignUpViewController.m in Sources */,
 				69C9705A177E854300B06719 /* CG_NewPostViewController.m in Sources */,
+				0E984DB7178DEC5F007C1C44 /* UIImage+AlphaAdditions.m in Sources */,
 				0EDDED5D1779CFFE00B7E790 /* PJ_CheckListMainViewController.m in Sources */,
 				0E7BC41717856AF4001AFC8D /* PJ_RetakeCameraViewController.m in Sources */,
 				0E6B80C7176B3A8F0088A3FE /* main.m in Sources */,
@@ -628,9 +668,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E984DB6178DEC5F007C1C44 /* UIImage+Alpha.m in Sources */,
 				0EDDED471779C17B00B7E790 /* PJ_SettingsMainViewController.m in Sources */,
+				0E984DBC178DEC5F007C1C44 /* UIImage+RoundedCornerAdditions.m in Sources */,
 				0E6B80E6176B3A8F0088A3FE /* cmypicTests.m in Sources */,
+				0E984DBA178DEC5F007C1C44 /* UIImage+ResizeAdditions.m in Sources */,
 				69C9705B177E854300B06719 /* CG_NewPostViewController.m in Sources */,
+				0E984DB8178DEC5F007C1C44 /* UIImage+AlphaAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,7 +802,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cmypic/cmypic-Prefix.pch";
 				INFOPLIST_FILE = "cmypic/cmypic-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "18C818E8-F0FF-46E4-B0D2-660DC1B724A6";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -780,7 +824,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cmypic/cmypic-Prefix.pch";
 				INFOPLIST_FILE = "cmypic/cmypic-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "18C818E8-F0FF-46E4-B0D2-660DC1B724A6";
 				TARGETED_DEVICE_FAMILY = 1;
