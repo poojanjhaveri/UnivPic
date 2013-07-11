@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import "DLCImagePickerController.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 
 
-@interface CG_NewPostViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextViewDelegate,UIActionSheetDelegate,UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate>
+@interface CG_NewPostViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextViewDelegate,UIActionSheetDelegate,UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate,DLCImagePickerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *postImageView;
 @property (weak, nonatomic) IBOutlet UITextView *postTextView;

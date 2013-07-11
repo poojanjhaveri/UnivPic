@@ -8,6 +8,7 @@
 
 #import "CG_NewPostViewController.h"
 #import "PJ_ChecklistModel.h"
+#import <AssetsLibrary/AssetsLibrary.h>
 
 // for uipicker in actionsheet
 //http://stackoverflow.com/questions/1262574/add-uipickerview-a-button-in-action-sheet-how
@@ -45,12 +46,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    
     self.model=[PJ_ChecklistModel sharedModel];
     
       [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshPickerView) name:@"RefreshPickerView" object:nil];
     
     
-    self.navigationController.navigationBarHidden=false;
+  //  self.navigationController.navigationBarHidden=false;
     self.navigationItem.title=@"Share";
     [self.navigationController.navigationItem.rightBarButtonItem setAction:@selector(saveNewPost:)];
     
@@ -63,11 +67,17 @@
 }
 
 
--(void)viewDidAppear:(BOOL)animated
+-(void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidAppear:NO];
-    self.postImageView.image=self.imagerecieved;
-    UIImageWriteToSavedPhotosAlbum(postImageView.image, nil, nil, nil);
+    [super viewWillAppear:NO];
+    if(self.postImageView.image==nil)
+    {
+    DLCImagePickerController *picker = [[DLCImagePickerController alloc] init];
+    picker.delegate = self;
+    [self presentViewController:picker animated:YES completion:nil];
+    }
+    
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -189,6 +199,7 @@
     NSData *imageData = UIImageJPEGRepresentation(_imagerecieved, 0.05f);
     photoName = [PFFile fileWithName:@"Image.jpg" data:imageData];
     
+    
     [photoName saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         NSLog(@"I am in");
         if (!error) {
@@ -215,6 +226,8 @@
             UIAlertView *photoUploadStatus = [[UIAlertView alloc] initWithTitle:@"Post Status" message:@"Some error while publishing post. Please try again later." delegate:self.view cancelButtonTitle:@"" otherButtonTitles: nil];
             [photoUploadStatus show];
         }
+        _imagerecieved=nil;
+        self.postImageView.image=nil;
         [self dismissViewControllerAnimated:YES completion:^{
             self.tabBarController.selectedIndex=0;
         }];
@@ -225,41 +238,36 @@
 }
 
 
+-(void) imagePickerControllerDidCancel:(DLCImagePickerController *)picker{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.tabBarController setSelectedIndex:0];
+}
 
--(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    NSString *mediaType =[info objectForKey: UIImagePickerControllerMediaType];
-    UIImage *originalImage, *editedImage;
-    if(CFStringCompare((CFStringRef) mediaType, kUTTypeImage, 0) ==kCFCompareEqualTo)
-    {
-        editedImage= [info objectForKey:@"UIImagePickerControllerEditedImage"];
-        originalImage = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
-        if(editedImage)
-        {
-            postImageView.image = editedImage;
-        }
-        else
-        {
-            postImageView.image = originalImage;
-        }
-        
-        UIImageWriteToSavedPhotosAlbum(postImageView.image, nil, nil, nil);
-    }
+-(void) imagePickerController:(DLCImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:NO];
     
-    // Resize image
-    UIGraphicsBeginImageContext(CGSizeMake(640, 960));
-    [originalImage drawInRect: CGRectMake(0, 0, 640, 960)];
-    smallImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
+    UIImage *new=[UIImage imageWithData:[info objectForKey:@"data"]];
     
-    // Upload image
-    NSData *imageData = UIImageJPEGRepresentation(originalImage, 0.05f);
+    _imagerecieved=new;
     
-    photoName = [PFFile fileWithName:@"Image.jpg" data:imageData];
-    
+    self.postImageView.image=new;
     [self dismissViewControllerAnimated:YES completion:nil];
     
+    if (info) {
+        ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+        [library writeImageDataToSavedPhotosAlbum:[info objectForKey:@"data"] metadata:nil completionBlock:^(NSURL *assetURL, NSError *error)
+         {
+             if (error) {
+                 NSLog(@"ERROR: the image failed to be written");
+             }
+             else {
+                 NSLog(@"PHOTO SAVED - assetURL: %@", assetURL);
+             }
+         }];
+    }
 }
+
+
 
 #pragma mark - PICKER FOR CHECKLIST
 

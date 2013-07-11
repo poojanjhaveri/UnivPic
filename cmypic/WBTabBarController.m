@@ -93,10 +93,16 @@
 {
     [self setSelectedIndex:2];
     [self performSelector:@selector(doHighlight:) withObject:sender afterDelay:0];
+   
+    /*
+    
     UIStoryboard * main =[UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    CG_NewPostViewController *new = ( CG_NewPostViewController *)[main instantiateViewControllerWithIdentifier:@"CAMERAOVERLAY"];
+    CG_NewPostViewController *new = ( CG_NewPostViewController *)[main instantiateViewControllerWithIdentifier:@"NEWPOST"];
     [self presentViewController:new animated:YES completion:nil];
     
+    */
+ 
+
 }
 
 

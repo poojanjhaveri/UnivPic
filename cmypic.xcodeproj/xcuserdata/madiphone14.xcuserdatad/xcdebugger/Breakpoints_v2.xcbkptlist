@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CG_NewPostViewController.m"
-            timestampString = "394808688.497132"
+            timestampString = "395260720.827415"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "269"
-            endingLineNumber = "269"
-            landmarkName = "-numberOfComponentsInPickerView:"
-            landmarkType = "5">
+            startingLineNumber = "273"
+            endingLineNumber = "273"
+            landmarkName = "@implementation CG_NewPostViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
