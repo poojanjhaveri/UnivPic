@@ -201,8 +201,7 @@
     
     
     [photoName saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        NSLog(@"I am in");
-        if (!error) {
+            if (!error) {
             photoObject = [PFObject objectWithClassName:@"Photo"];
             
             [photoObject setObject:photoName forKey:@"image"];
@@ -210,8 +209,19 @@
             [photoObject setObject:shareMode forKey:@"publicOrPrivate"];
             [photoObject setObject:postIsTitle forKey:@"titleOrTag"];
             [photoObject setObject:user forKey:@"user"];
+            
+            
+            
            // [photoObject setObject:smallImage forKey:@"thumbnail"];
             [photoObject save];
+            if(self.postSwitch.isOn==true)
+            {
+               [self.model.thingstodo removeObjectAtIndex:[_thePicker selectedRowInComponent:0]];
+                [self.model deleteAnswer:postMsg];
+                
+            }
+            
+
             UIAlertView *photoUploadStatus = [[UIAlertView alloc] initWithTitle:@"Post Status" message:@"Your image is posted" delegate:self.view cancelButtonTitle:@"Okay" otherButtonTitles: nil];
             
             

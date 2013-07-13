@@ -35,7 +35,6 @@
             if(!error)
             {
                 _thingstodo=[[getquery getFirstObject] objectForKey:@"CheckListArray"];
-                NSLog(@"Count is %d",[_thingstodo count]);
                 [[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshTableView" object:nil];
                 [[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshPickerView" object:nil];
             }
@@ -74,24 +73,39 @@
 
 - (NSUInteger) addAnswer: (NSString *)answerText {
     NSUInteger answerIndex = 0;
+    answerText=[NSString stringWithFormat:@"#%@",answerText];
     [self.thingstodo insertObject:answerText
                           atIndex:answerIndex];
     [self savetoserver:answerText];
     return answerIndex;
 }
 
+
+-(void) deleteAnswer:(NSString *)deleteitem
+{
+    PFQuery *getquery =[PFQuery queryWithClassName:@"CheckList"];
+    [getquery whereKey:@"User" equalTo:[PFUser currentUser]];
+    [getquery getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        [object removeObject:deleteitem forKey:@"CheckListArray"];
+        [object saveInBackground];
+    }];
+    
+}
+
+
 -(void)savetoserver: (NSString *)itemtext
 {
     NSLog(@"name is %@",itemtext);
+    
     
     PFQuery *getquery =[PFQuery queryWithClassName:@"CheckList"];
     [getquery whereKey:@"User" equalTo:[PFUser currentUser]];
     [getquery getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
         if(!error)
         {
-            PFObject *item=object;
-            [item addObject:itemtext forKey:@"CheckListArray"];
-            [item saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            _myPFArray=object;
+            [ _myPFArray addObject:itemtext forKey:@"CheckListArray"];
+            [ _myPFArray saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                 if (!error) {
                     //The registration was successful, go to the wall
                     NSLog(@"Checklist array successfully added");

@@ -30,12 +30,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _displayName.text=[NSString stringWithFormat:@"%@ %@",[[PFUser currentUser] objectForKey:@"firstName"],[[PFUser currentUser] objectForKey:@"lastName"]];
-    _ClassOF.text=[[PFUser currentUser] objectForKey:@"ClassOf"];
-    self.imageView.image=[[PFUser currentUser]objectForKey:@"profilePictureSmall"];
-    
+     	// Do any additional setup after loading the view.
+}
 
-	// Do any additional setup after loading the view.
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:YES];
+    _displayName.text=[NSString stringWithFormat:@"%@ %@",[[PFUser currentUser] objectForKey:@"firstName"],[[PFUser currentUser] objectForKey:@"lastName"]];
+    _ClassOF.text=[NSString stringWithFormat:@"Class of %@",[[PFUser currentUser] objectForKey:@"ClassOf"]];
+    
+    NSData* imageData = [[NSUserDefaults standardUserDefaults] objectForKey:@"profilePictureMedium"];
+    _imageView.image=[UIImage imageWithData:imageData];
+
 }
 
 - (void)didReceiveMemoryWarning

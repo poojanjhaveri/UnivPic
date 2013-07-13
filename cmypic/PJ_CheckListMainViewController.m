@@ -36,6 +36,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshTableView) name:@"RefreshTableView" object:nil];
     self.model=[PJ_ChecklistModel sharedModel];
     self.tableView.delegate=self;
@@ -52,11 +56,13 @@
 }
 
 
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     PJ_AddItemToCheckListViewController *inputVC = segue.destinationViewController;
     // completion block
     inputVC.completionHandler = ^(NSString *text) {
         if (text != nil) {
+            
             NSUInteger answerIndex = [self.model addAnswer:text];
             NSIndexPath *indexPath = [NSIndexPath
                                       indexPathForRow:answerIndex inSection:0];
@@ -152,8 +158,12 @@
 {
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
         // Delete the row from the data source
-        //    [self.model removeAnswerAtIndex:indexPath.row];
+        NSString *deleteitm=[self.model.thingstodo objectAtIndex:indexPath.row];
+        
+        [self.model.thingstodo removeObjectAtIndex:indexPath.row];
+        [self.model deleteAnswer:deleteitm];
         
         [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }

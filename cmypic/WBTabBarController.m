@@ -42,6 +42,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+       
     }
     return self;
 }
@@ -49,6 +50,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.tabBar setBarTintColor:[UIColor colorWithRed:0.6 green:0.0 blue:0.0 alpha:1]];
+
+    [self.tabBar setTintColor:[UIColor yellowColor]];
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                      [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                      nil] forState:UIControlStateNormal];
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                       [UIColor yellowColor], NSForegroundColorAttributeName,
+                                                       nil] forState:UIControlStateSelected];
+    
+    
+
+    [self.tabBarItem setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                              [UIFont fontWithName:@"Verdana-Bold" size:50.0], NSFontAttributeName,
+                                              nil]
+                                   forState:UIControlStateNormal];
+    
+     
+    
     self.delegate=self;
 
     [self addCenterButtonWithImage:[UIImage imageNamed:@"camera_button_take.png"] highlightImage:[UIImage imageNamed:@"tabBar_cameraButton_ready_matte.png"] target:self action:@selector(buttonPressed:)];

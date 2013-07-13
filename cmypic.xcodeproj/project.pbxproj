@@ -124,6 +124,8 @@
 		0EA052B2176CE9CB000D010D /* tabBar_cameraButton_ready_matte@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EA052AE176CE9CB000D010D /* tabBar_cameraButton_ready_matte@2x.png */; };
 		0EA2CF941786F924006AC1A0 /* Scale.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EA2CF931786F924006AC1A0 /* Scale.xib */; };
 		0EA657E41780978D00A28DA7 /* PJ_AddItemToCheckListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA657E31780978D00A28DA7 /* PJ_AddItemToCheckListViewController.m */; };
+		0EBF9801179182B6006EF0F6 /* PJ_MyFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF9800179182B6006EF0F6 /* PJ_MyFeedViewController.m */; };
+		0EBF9802179182B6006EF0F6 /* PJ_MyFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF9800179182B6006EF0F6 /* PJ_MyFeedViewController.m */; };
 		0EC5457E1782C83B002BC375 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC5457D1782C83B002BC375 /* CoreMedia.framework */; };
 		0EC545801782C843002BC375 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC5457F1782C843002BC375 /* CoreVideo.framework */; };
 		0EC545821782C84A002BC375 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC545811782C84A002BC375 /* AVFoundation.framework */; };
@@ -139,9 +141,6 @@
 		0EDDED5D1779CFFE00B7E790 /* PJ_CheckListMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED5C1779CFFE00B7E790 /* PJ_CheckListMainViewController.m */; };
 		0EEC27BC1785D6F400DBA248 /* HFImageEditorFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC27B81785D6F400DBA248 /* HFImageEditorFrameView.m */; };
 		0EEC27BD1785D6F400DBA248 /* HFImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC27BB1785D6F400DBA248 /* HFImageEditorViewController.m */; };
-		0EF11212178F3C0F00D3F89A /* USC-Trojans.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EF11211178F3C0F00D3F89A /* USC-Trojans.jpg */; };
-		0EF11217178F3D1000D3F89A /* TGUSC.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EF11215178F3D1000D3F89A /* TGUSC.jpg */; };
-		0EF11218178F3D1000D3F89A /* Usc-Trojans-Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EF11216178F3D1000D3F89A /* Usc-Trojans-Logo.jpg */; };
 		0EF1121C178F3EBB00D3F89A /* PJ_ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF1121B178F3EBB00D3F89A /* PJ_ProfileViewController.m */; };
 		69C9705A177E854300B06719 /* CG_NewPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C97059177E854300B06719 /* CG_NewPostViewController.m */; };
 		69C9705B177E854300B06719 /* CG_NewPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C97059177E854300B06719 /* CG_NewPostViewController.m */; };
@@ -313,6 +312,8 @@
 		0EA2CF931786F924006AC1A0 /* Scale.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Scale.xib; sourceTree = "<group>"; };
 		0EA657E21780978D00A28DA7 /* PJ_AddItemToCheckListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_AddItemToCheckListViewController.h; sourceTree = "<group>"; };
 		0EA657E31780978D00A28DA7 /* PJ_AddItemToCheckListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_AddItemToCheckListViewController.m; sourceTree = "<group>"; };
+		0EBF97FF179182B6006EF0F6 /* PJ_MyFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_MyFeedViewController.h; sourceTree = "<group>"; };
+		0EBF9800179182B6006EF0F6 /* PJ_MyFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_MyFeedViewController.m; sourceTree = "<group>"; };
 		0EC5457D1782C83B002BC375 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		0EC5457F1782C843002BC375 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		0EC545811782C84A002BC375 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -335,9 +336,6 @@
 		0EEC27B91785D6F400DBA248 /* HFImageEditorViewController+SubclassingHooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HFImageEditorViewController+SubclassingHooks.h"; sourceTree = "<group>"; };
 		0EEC27BA1785D6F400DBA248 /* HFImageEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFImageEditorViewController.h; sourceTree = "<group>"; };
 		0EEC27BB1785D6F400DBA248 /* HFImageEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFImageEditorViewController.m; sourceTree = "<group>"; };
-		0EF11211178F3C0F00D3F89A /* USC-Trojans.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "USC-Trojans.jpg"; sourceTree = "<group>"; };
-		0EF11215178F3D1000D3F89A /* TGUSC.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TGUSC.jpg; sourceTree = "<group>"; };
-		0EF11216178F3D1000D3F89A /* Usc-Trojans-Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Usc-Trojans-Logo.jpg"; sourceTree = "<group>"; };
 		0EF1121A178F3EBB00D3F89A /* PJ_ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_ProfileViewController.h; sourceTree = "<group>"; };
 		0EF1121B178F3EBB00D3F89A /* PJ_ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_ProfileViewController.m; sourceTree = "<group>"; };
 		69C97058177E854300B06719 /* CG_NewPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CG_NewPostViewController.h; sourceTree = "<group>"; };
@@ -607,7 +605,7 @@
 				69C97057177E84CA00B06719 /* NewPost Tab */,
 				0EDDED591779CFDE00B7E790 /* CheckList Tab */,
 				0EDDED481779CF2500B7E790 /* Additional Components */,
-				0EDDED421779C15400B7E790 /* Settings Tab */,
+				0EDDED421779C15400B7E790 /* More Tab */,
 				0EA0529A176CD9EA000D010D /* HomeFeed */,
 				0EA0526E176C84DA000D010D /* ProfileEdit and FirstTimeSetting */,
 				0E71DB16176B734700360759 /* SignUp */,
@@ -726,9 +724,6 @@
 		0EA0527C176CD98E000D010D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0EF11215178F3D1000D3F89A /* TGUSC.jpg */,
-				0EF11216178F3D1000D3F89A /* Usc-Trojans-Logo.jpg */,
-				0EF11211178F3C0F00D3F89A /* USC-Trojans.jpg */,
 				0E4FD495178DC7470076BC00 /* photo.jpg */,
 			);
 			name = Resources;
@@ -773,12 +768,21 @@
 			name = AddItem;
 			sourceTree = "<group>";
 		};
-		0EDDED421779C15400B7E790 /* Settings Tab */ = {
+		0EBF97F817916755006EF0F6 /* MyFeed */ = {
+			isa = PBXGroup;
+			children = (
+				0EBF97FF179182B6006EF0F6 /* PJ_MyFeedViewController.h */,
+				0EBF9800179182B6006EF0F6 /* PJ_MyFeedViewController.m */,
+			);
+			name = MyFeed;
+			sourceTree = "<group>";
+		};
+		0EDDED421779C15400B7E790 /* More Tab */ = {
 			isa = PBXGroup;
 			children = (
 				0EDDED431779C15E00B7E790 /* SettingsMainView */,
 			);
-			name = "Settings Tab";
+			name = "More Tab";
 			sourceTree = "<group>";
 		};
 		0EDDED431779C15E00B7E790 /* SettingsMainView */ = {
@@ -851,6 +855,7 @@
 		0EF11219178F3E2C00D3F89A /* ProfileTab */ = {
 			isa = PBXGroup;
 			children = (
+				0EBF97F817916755006EF0F6 /* MyFeed */,
 				0EF1121A178F3EBB00D3F89A /* PJ_ProfileViewController.h */,
 				0EF1121B178F3EBB00D3F89A /* PJ_ProfileViewController.m */,
 			);
@@ -1008,7 +1013,6 @@
 				0E23C1CE178F1FF90041DA87 /* aqua.acv in Resources */,
 				0EA2CF941786F924006AC1A0 /* Scale.xib in Resources */,
 				0E23C195178F1FF90041DA87 /* 2@2x.jpg in Resources */,
-				0EF11217178F3D1000D3F89A /* TGUSC.jpg in Resources */,
 				0E23C1A4178F1FF90041DA87 /* blackframe.png in Resources */,
 				0E23C1B7178F1FF90041DA87 /* filter.png in Resources */,
 				0E23C1B1178F1FF90041DA87 /* dock_bg.png in Resources */,
@@ -1040,7 +1044,6 @@
 				0EDDED571779CF6000B7E790 /* scroller_bg@2x.png in Resources */,
 				0E23C1AA178F1FF90041DA87 /* blur@2x.png in Resources */,
 				0E23C1B6178F1FF90041DA87 /* filter-open@2x.png in Resources */,
-				0EF11218178F3D1000D3F89A /* Usc-Trojans-Logo.jpg in Resources */,
 				0E6B80C5176B3A8F0088A3FE /* InfoPlist.strings in Resources */,
 				0E23C1C3178F1FF90041DA87 /* library.png in Resources */,
 				0E23C1C2178F1FF90041DA87 /* front-camera@2x.png in Resources */,
@@ -1051,7 +1054,6 @@
 				0E23C1AE178F1FF90041DA87 /* camera-icon@2x.png in Resources */,
 				0E23C1A3178F1FF90041DA87 /* 9@2x.jpg in Resources */,
 				0E23C1AF178F1FF90041DA87 /* close.png in Resources */,
-				0EF11212178F3C0F00D3F89A /* USC-Trojans.jpg in Resources */,
 				0E23C19D178F1FF90041DA87 /* 6@2x.jpg in Resources */,
 				0E23C19F178F1FF90041DA87 /* 7@2x.jpg in Resources */,
 				0E23C1C5178F1FF90041DA87 /* micro_carbon.png in Resources */,
@@ -1099,6 +1101,7 @@
 				69C9705A177E854300B06719 /* CG_NewPostViewController.m in Sources */,
 				0E984DB7178DEC5F007C1C44 /* UIImage+AlphaAdditions.m in Sources */,
 				0EDDED5D1779CFFE00B7E790 /* PJ_CheckListMainViewController.m in Sources */,
+				0EBF9801179182B6006EF0F6 /* PJ_MyFeedViewController.m in Sources */,
 				0E7BC41717856AF4001AFC8D /* PJ_RetakeCameraViewController.m in Sources */,
 				0E6B80C7176B3A8F0088A3FE /* main.m in Sources */,
 				0EDDED551779CF6000B7E790 /* MVSelectorScrollView.m in Sources */,
@@ -1118,6 +1121,7 @@
 				0E6B80E6176B3A8F0088A3FE /* cmypicTests.m in Sources */,
 				0E984DBA178DEC5F007C1C44 /* UIImage+ResizeAdditions.m in Sources */,
 				69C9705B177E854300B06719 /* CG_NewPostViewController.m in Sources */,
+				0EBF9802179182B6006EF0F6 /* PJ_MyFeedViewController.m in Sources */,
 				0E984DB8178DEC5F007C1C44 /* UIImage+AlphaAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1252,7 +1256,7 @@
 				GCC_PREFIX_HEADER = "cmypic/cmypic-Prefix.pch";
 				HEADER_SEARCH_PATHS = "/Users/madiphone14/Downloads/GPUImage-master-2/**";
 				INFOPLIST_FILE = "cmypic/cmypic-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "18C818E8-F0FF-46E4-B0D2-660DC1B724A6";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1276,7 +1280,7 @@
 				GCC_PREFIX_HEADER = "cmypic/cmypic-Prefix.pch";
 				HEADER_SEARCH_PATHS = "/Users/madiphone14/Downloads/GPUImage-master-2/**";
 				INFOPLIST_FILE = "cmypic/cmypic-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "18C818E8-F0FF-46E4-B0D2-660DC1B724A6";
 				TARGETED_DEVICE_FAMILY = 1;

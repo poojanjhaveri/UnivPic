@@ -230,6 +230,10 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     [[PFUser currentUser] setObject:photoName forKey:@"profilePictureMedium"];
     [[PFUser currentUser] setObject:smallphotoName forKey:@"profilePictureSmall"];
     
+    [[NSUserDefaults standardUserDefaults] setObject:imageData forKey:@"profilePictureMedium"];
+    [[NSUserDefaults standardUserDefaults] setObject:smallimageData forKey:@"profilePictureSmall"];
+    
+    
 
     [[PFUser currentUser] saveInBackground];
     

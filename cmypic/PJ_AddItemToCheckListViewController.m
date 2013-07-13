@@ -41,12 +41,29 @@
 
 // Do action when DONE is clicked from the keyword. Send the itemback to the previous list.
 -(BOOL) textFieldShouldReturn:(UITextField *)textField {
+    
+    
+    
+    
     if (self.completionHandler) {
         self.completionHandler(self.inputField.text);
     }
     return YES;
 }
 
+
+
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    #define ACCEPTABLE_CHARECTERS @" ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_"
+    
+    if ([string rangeOfCharacterFromSet:[[NSCharacterSet alphanumericCharacterSet] invertedSet]].location != NSNotFound) {
+        
+        return NO;
+    }
+    return YES;
+}
 
 
 

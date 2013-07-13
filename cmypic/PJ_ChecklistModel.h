@@ -7,13 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
 @interface PJ_ChecklistModel : NSObject
 
 @property(nonatomic,strong)NSMutableArray *thingstodo;
 @property(nonatomic,strong)NSMutableArray *thingsdone;
+@property(strong,nonatomic) PFObject *myPFArray;
 
 - (NSUInteger) addAnswer: (NSString *)answerText;
+-(void) deleteAnswer:(NSString *)deleteitem;
 + (instancetype)sharedModel;
 -(void)savetoserver: (NSString *)item;
 @end
