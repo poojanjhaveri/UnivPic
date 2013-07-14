@@ -9,6 +9,7 @@
 #import "PJ_CheckListMainViewController.h"
 #import "PJ_ChecklistModel.h"
 #import "PJ_AddItemToCheckListViewController.h"
+#import "MBProgressHUD.h"
 
 @interface PJ_CheckListMainViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -37,6 +38,16 @@
 {
     [super viewDidLoad];
     
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.6 green:0.0 blue:0.0 alpha:1]];
+    [self.navigationController.navigationBar setTintColor:[UIColor yellowColor]];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor yellowColor], NSForegroundColorAttributeName,
+                                                                      nil ]];
+    
+    
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:refreshControl];
+    
     
     
     
@@ -45,6 +56,7 @@
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
     
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     /*
      UISegmentedControl *statFilter = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"To be Created", @"Stored", nil]];
@@ -55,6 +67,11 @@
      */
 }
 
+-(void)handleRefresh:(id)sender
+{
+    [self.model pullfromserver];
+    [(UIRefreshControl *)sender endRefreshing];
+}
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -110,8 +127,8 @@
 
 - (void)refreshTableView
 {
-    self.model=[PJ_ChecklistModel sharedModel];
     [self.tableView reloadData];
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
 
 

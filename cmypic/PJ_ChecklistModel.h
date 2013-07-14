@@ -19,4 +19,5 @@
 -(void) deleteAnswer:(NSString *)deleteitem;
 + (instancetype)sharedModel;
 -(void)savetoserver: (NSString *)item;
+-(void)pullfromserver;
 @end

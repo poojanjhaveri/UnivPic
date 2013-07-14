@@ -47,7 +47,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.wantsFullScreenLayout = YES;
+    self.wantsFullScreenLayout = YES; // We might just remove this as iOS 7 already runs in fullscreen layout. But lets keep it as of now for iOS 6
     //set background color
     self.view.backgroundColor = [UIColor colorWithPatternImage:
                                  [UIImage imageNamed:@"micro_carbon"]];

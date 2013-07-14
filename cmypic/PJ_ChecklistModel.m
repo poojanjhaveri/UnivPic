@@ -93,6 +93,23 @@
 }
 
 
+-(void)pullfromserver
+{
+    
+    PFQuery *getquery =[PFQuery queryWithClassName:@"CheckList"];
+    [getquery whereKey:@"User" equalTo:[PFUser currentUser]];
+    [getquery getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error)
+     {
+         if(!error)
+         {
+             _thingstodo=[[getquery getFirstObject] objectForKey:@"CheckListArray"];
+             [[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshTableView" object:nil];
+         }
+
+     }];
+}
+
+
 -(void)savetoserver: (NSString *)itemtext
 {
     NSLog(@"name is %@",itemtext);

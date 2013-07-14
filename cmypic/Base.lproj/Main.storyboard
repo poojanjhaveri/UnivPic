@@ -784,7 +784,7 @@
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Checklist" id="zbQ-Zp-Zw4"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QKE-QA-rpq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="QKE-QA-rpq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
