@@ -116,7 +116,6 @@
 		0E984DBB178DEC5F007C1C44 /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E984DB4178DEC5F007C1C44 /* UIImage+RoundedCornerAdditions.m */; };
 		0E984DBC178DEC5F007C1C44 /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E984DB4178DEC5F007C1C44 /* UIImage+RoundedCornerAdditions.m */; };
 		0EA05274176C85FF000D010D /* PJ_ProfieEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA05273176C85FF000D010D /* PJ_ProfieEditViewController.m */; };
-		0EA0529D176CD9FC000D010D /* PJ_HomeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0529C176CD9FC000D010D /* PJ_HomeFeedViewController.m */; };
 		0EA052A1176CE8BE000D010D /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA052A0176CE8BE000D010D /* WBTabBarController.m */; };
 		0EA052AF176CE9CB000D010D /* camera_button_take.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EA052AB176CE9CB000D010D /* camera_button_take.png */; };
 		0EA052B0176CE9CB000D010D /* camera_button_take@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EA052AC176CE9CB000D010D /* camera_button_take@2x.png */; };
@@ -143,6 +142,12 @@
 		0EEC27BC1785D6F400DBA248 /* HFImageEditorFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC27B81785D6F400DBA248 /* HFImageEditorFrameView.m */; };
 		0EEC27BD1785D6F400DBA248 /* HFImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC27BB1785D6F400DBA248 /* HFImageEditorViewController.m */; };
 		0EF1121C178F3EBB00D3F89A /* PJ_ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF1121B178F3EBB00D3F89A /* PJ_ProfileViewController.m */; };
+		69451AEF17940260001849D6 /* CG_ProfileFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69451AE91794025F001849D6 /* CG_ProfileFeedViewController.m */; };
+		69451AF017940260001849D6 /* CG_ProfileFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69451AE91794025F001849D6 /* CG_ProfileFeedViewController.m */; };
+		69451AF117940260001849D6 /* CG_HomeFeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69451AEB1794025F001849D6 /* CG_HomeFeedsViewController.m */; };
+		69451AF217940260001849D6 /* CG_HomeFeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69451AEB1794025F001849D6 /* CG_HomeFeedsViewController.m */; };
+		69451AF317940260001849D6 /* CG_HomeFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69451AED1794025F001849D6 /* CG_HomeFeedCell.m */; };
+		69451AF417940260001849D6 /* CG_HomeFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69451AED1794025F001849D6 /* CG_HomeFeedCell.m */; };
 		69C9705A177E854300B06719 /* CG_NewPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C97059177E854300B06719 /* CG_NewPostViewController.m */; };
 		69C9705B177E854300B06719 /* CG_NewPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C97059177E854300B06719 /* CG_NewPostViewController.m */; };
 /* End PBXBuildFile section */
@@ -302,8 +307,6 @@
 		0E984DBE178DECBC007C1C44 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
 		0EA05272176C85FF000D010D /* PJ_ProfieEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_ProfieEditViewController.h; sourceTree = "<group>"; };
 		0EA05273176C85FF000D010D /* PJ_ProfieEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_ProfieEditViewController.m; sourceTree = "<group>"; };
-		0EA0529B176CD9FC000D010D /* PJ_HomeFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_HomeFeedViewController.h; sourceTree = "<group>"; };
-		0EA0529C176CD9FC000D010D /* PJ_HomeFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_HomeFeedViewController.m; sourceTree = "<group>"; };
 		0EA0529F176CE8BE000D010D /* WBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTabBarController.h; sourceTree = "<group>"; };
 		0EA052A0176CE8BE000D010D /* WBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTabBarController.m; sourceTree = "<group>"; };
 		0EA052AB176CE9CB000D010D /* camera_button_take.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_button_take.png; sourceTree = "<group>"; };
@@ -341,6 +344,12 @@
 		0EEC27BB1785D6F400DBA248 /* HFImageEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFImageEditorViewController.m; sourceTree = "<group>"; };
 		0EF1121A178F3EBB00D3F89A /* PJ_ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_ProfileViewController.h; sourceTree = "<group>"; };
 		0EF1121B178F3EBB00D3F89A /* PJ_ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_ProfileViewController.m; sourceTree = "<group>"; };
+		69451AE91794025F001849D6 /* CG_ProfileFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CG_ProfileFeedViewController.m; sourceTree = "<group>"; };
+		69451AEA1794025F001849D6 /* CG_ProfileFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CG_ProfileFeedViewController.h; sourceTree = "<group>"; };
+		69451AEB1794025F001849D6 /* CG_HomeFeedsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CG_HomeFeedsViewController.m; sourceTree = "<group>"; };
+		69451AEC1794025F001849D6 /* CG_HomeFeedsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CG_HomeFeedsViewController.h; sourceTree = "<group>"; };
+		69451AED1794025F001849D6 /* CG_HomeFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CG_HomeFeedCell.m; sourceTree = "<group>"; };
+		69451AEE17940260001849D6 /* CG_HomeFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CG_HomeFeedCell.h; sourceTree = "<group>"; };
 		69C97058177E854300B06719 /* CG_NewPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CG_NewPostViewController.h; sourceTree = "<group>"; };
 		69C97059177E854300B06719 /* CG_NewPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CG_NewPostViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -735,8 +744,12 @@
 		0EA0529A176CD9EA000D010D /* HomeFeed */ = {
 			isa = PBXGroup;
 			children = (
-				0EA0529B176CD9FC000D010D /* PJ_HomeFeedViewController.h */,
-				0EA0529C176CD9FC000D010D /* PJ_HomeFeedViewController.m */,
+				69451AE91794025F001849D6 /* CG_ProfileFeedViewController.m */,
+				69451AEA1794025F001849D6 /* CG_ProfileFeedViewController.h */,
+				69451AEB1794025F001849D6 /* CG_HomeFeedsViewController.m */,
+				69451AEC1794025F001849D6 /* CG_HomeFeedsViewController.h */,
+				69451AED1794025F001849D6 /* CG_HomeFeedCell.m */,
+				69451AEE17940260001849D6 /* CG_HomeFeedCell.h */,
 			);
 			name = HomeFeed;
 			sourceTree = "<group>";
@@ -942,7 +955,7 @@
 				ORGANIZATIONNAME = "Poojan Jhaveri";
 				TargetAttributes = {
 					0E6B80B6176B3A8F0088A3FE = {
-						DevelopmentTeam = 268PEX4CJ3;
+						DevelopmentTeam = 7FX28RKSGV;
 					};
 					0E6B80D7176B3A8F0088A3FE = {
 						TestTargetID = 0E6B80B6176B3A8F0088A3FE;
@@ -1094,6 +1107,7 @@
 			files = (
 				0EA657E41780978D00A28DA7 /* PJ_AddItemToCheckListViewController.m in Sources */,
 				0E23C18E178F1FF90041DA87 /* GrayscaleContrastFilter.m in Sources */,
+				69451AF117940260001849D6 /* CG_HomeFeedsViewController.m in Sources */,
 				0E984DBB178DEC5F007C1C44 /* UIImage+RoundedCornerAdditions.m in Sources */,
 				0EEC27BC1785D6F400DBA248 /* HFImageEditorFrameView.m in Sources */,
 				0EDDED541779CF6000B7E790 /* MVSelectorContentView.m in Sources */,
@@ -1102,13 +1116,14 @@
 				0EC3CEE9179290710065F5C5 /* MBProgressHUD.m in Sources */,
 				0E6B80CB176B3A8F0088A3FE /* PJ_AppDelegate.m in Sources */,
 				0E802C8D176B6C5A004466D4 /* PJ_LoginViewController.m in Sources */,
+				69451AEF17940260001849D6 /* CG_ProfileFeedViewController.m in Sources */,
 				0E40E43D1782E90400A75B6D /* PJ_CameraViewController.m in Sources */,
 				0EF1121C178F3EBB00D3F89A /* PJ_ProfileViewController.m in Sources */,
 				0E984DB9178DEC5F007C1C44 /* UIImage+ResizeAdditions.m in Sources */,
 				0EEC27BD1785D6F400DBA248 /* HFImageEditorViewController.m in Sources */,
 				0E984DB5178DEC5F007C1C44 /* UIImage+Alpha.m in Sources */,
-				0EA0529D176CD9FC000D010D /* PJ_HomeFeedViewController.m in Sources */,
 				0EA05274176C85FF000D010D /* PJ_ProfieEditViewController.m in Sources */,
+				69451AF317940260001849D6 /* CG_HomeFeedCell.m in Sources */,
 				0EDDED531779CF6000B7E790 /* MVScrollerClipView.m in Sources */,
 				0E178B9E177AF510009C06D4 /* PJ_ChecklistModel.m in Sources */,
 				0E71DB1C176B85D900360759 /* PJ_SignUpViewController.m in Sources */,
@@ -1129,10 +1144,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69451AF417940260001849D6 /* CG_HomeFeedCell.m in Sources */,
 				0E984DB6178DEC5F007C1C44 /* UIImage+Alpha.m in Sources */,
+				69451AF217940260001849D6 /* CG_HomeFeedsViewController.m in Sources */,
 				0EDDED471779C17B00B7E790 /* PJ_SettingsMainViewController.m in Sources */,
 				0E984DBC178DEC5F007C1C44 /* UIImage+RoundedCornerAdditions.m in Sources */,
 				0E6B80E6176B3A8F0088A3FE /* cmypicTests.m in Sources */,
+				69451AF017940260001849D6 /* CG_ProfileFeedViewController.m in Sources */,
 				0E984DBA178DEC5F007C1C44 /* UIImage+ResizeAdditions.m in Sources */,
 				69C9705B177E854300B06719 /* CG_NewPostViewController.m in Sources */,
 				0EBF9802179182B6006EF0F6 /* PJ_MyFeedViewController.m in Sources */,
@@ -1260,8 +1278,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Poojan Jhaveri (BNMWDN3M8D)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chitvan Gupta (RR3X447H9Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chitvan Gupta (RR3X447H9Y)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/cmypic",
@@ -1270,7 +1288,7 @@
 				GCC_PREFIX_HEADER = "cmypic/cmypic-Prefix.pch";
 				HEADER_SEARCH_PATHS = "/Users/madiphone14/Downloads/GPUImage-master-2/**";
 				INFOPLIST_FILE = "cmypic/cmypic-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "18C818E8-F0FF-46E4-B0D2-660DC1B724A6";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1284,8 +1302,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Poojan Jhaveri (BNMWDN3M8D)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chitvan Gupta (RR3X447H9Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chitvan Gupta (RR3X447H9Y)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/cmypic",
@@ -1294,7 +1312,7 @@
 				GCC_PREFIX_HEADER = "cmypic/cmypic-Prefix.pch";
 				HEADER_SEARCH_PATHS = "/Users/madiphone14/Downloads/GPUImage-master-2/**";
 				INFOPLIST_FILE = "cmypic/cmypic-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "18C818E8-F0FF-46E4-B0D2-660DC1B724A6";
 				TARGETED_DEVICE_FAMILY = 1;
