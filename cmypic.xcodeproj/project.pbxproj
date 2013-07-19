@@ -955,7 +955,7 @@
 				ORGANIZATIONNAME = "Poojan Jhaveri";
 				TargetAttributes = {
 					0E6B80B6176B3A8F0088A3FE = {
-						DevelopmentTeam = 7FX28RKSGV;
+						DevelopmentTeam = 268PEX4CJ3;
 					};
 					0E6B80D7176B3A8F0088A3FE = {
 						TestTargetID = 0E6B80B6176B3A8F0088A3FE;
@@ -1278,21 +1278,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chitvan Gupta (RR3X447H9Y)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chitvan Gupta (RR3X447H9Y)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Poojan Jhaveri (BNMWDN3M8D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Poojan Jhaveri (BNMWDN3M8D)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/cmypic",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cmypic/cmypic-Prefix.pch";
-				HEADER_SEARCH_PATHS = "/Users/madiphone14/Downloads/GPUImage-master-2/**";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/cmypic/GPUImage-master-2/**";
 				INFOPLIST_FILE = "cmypic/cmypic-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "18C818E8-F0FF-46E4-B0D2-660DC1B724A6";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
-				USER_HEADER_SEARCH_PATHS = "/Users/madiphone14/Downloads/GPUImage-master-2/**";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/cmypic/GPUImage-master-2/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1302,21 +1302,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chitvan Gupta (RR3X447H9Y)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chitvan Gupta (RR3X447H9Y)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Poojan Jhaveri (BNMWDN3M8D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Poojan Jhaveri (BNMWDN3M8D)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/cmypic",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cmypic/cmypic-Prefix.pch";
-				HEADER_SEARCH_PATHS = "/Users/madiphone14/Downloads/GPUImage-master-2/**";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/cmypic/GPUImage-master-2/**";
 				INFOPLIST_FILE = "cmypic/cmypic-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "18C818E8-F0FF-46E4-B0D2-660DC1B724A6";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
-				USER_HEADER_SEARCH_PATHS = "/Users/madiphone14/Downloads/GPUImage-master-2/**";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/cmypic/GPUImage-master-2/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
