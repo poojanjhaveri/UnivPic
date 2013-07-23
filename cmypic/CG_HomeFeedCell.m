@@ -69,7 +69,7 @@
         [addLike saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error){
             if(!error)
             {
-                NSLog(@"Hurray! Added a like");
+        //        NSLog(@"Hurray! Added a like");
                 objectForLike = addLike;
             }
             else
@@ -90,7 +90,7 @@
             [objectForLike deleteInBackground];
         }
     }
-    [likeBtnOutlet setTitle:[NSString stringWithFormat:@"%i" ,numberOfLikes] forState:UIControlStateNormal];
+    [likeBtnOutlet setTitle:[NSString stringWithFormat:@"%i Like" ,numberOfLikes] forState:UIControlStateNormal];
     
     
 }
@@ -119,7 +119,7 @@
         //        //username
         
         userName.text = [NSString stringWithFormat:@"%@ %@", [obj objectForKey:@"firstName"], [obj objectForKey:@"lastName"]];
-        NSLog(@"name %@ ",[obj objectForKey:@"firstName"]);
+   //     NSLog(@"name %@ ",[obj objectForKey:@"firstName"]);
 
         
     }];
@@ -135,7 +135,7 @@
     feedPhoto.image = imageView.image;
     //[feedPhoto ]
     NSString *imageInfo = [object objectForKey:@"imageTitle"];
-    NSLog(@"%@", imageInfo);
+  //  NSLog(@"%@", imageInfo);
     feedDesc.text = imageInfo;
     
     //Display check mark if this title was done!
@@ -177,8 +177,9 @@
                     break;
                 }
             }
-            NSString *likeBtnLabel = [NSString stringWithFormat:@"%d" , likesObjects.count] ;
+            NSString *likeBtnLabel = [NSString stringWithFormat:@"%d Like" , likesObjects.count] ;
             [likeBtnOutlet setTitle:likeBtnLabel forState:UIControlStateNormal ];
+       //     likeBtnOutlet.titleLabel.text=likeBtnLabel;
         }
                   }];
     

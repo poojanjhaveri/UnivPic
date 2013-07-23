@@ -11,4 +11,5 @@
 
 @interface CG_ProfileFeedViewController : PFQueryTableViewController
 
+
 @end

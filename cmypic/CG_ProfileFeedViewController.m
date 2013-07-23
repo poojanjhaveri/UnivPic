@@ -9,6 +9,9 @@
 #import "CG_ProfileFeedViewController.h"
 
 @interface CG_ProfileFeedViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *ClassOF;
+@property (weak, nonatomic) IBOutlet UILabel *displayName;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -34,12 +37,21 @@
         // The number of objects to show per page
         self.objectsPerPage = 25;
     }
+    
+    
+    
     return self;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _displayName.text=[NSString stringWithFormat:@"%@ %@",[[PFUser currentUser] objectForKey:@"firstName"],[[PFUser currentUser] objectForKey:@"lastName"]];
+    _ClassOF.text=[NSString stringWithFormat:@"Class of %@",[[PFUser currentUser] objectForKey:@"ClassOf"]];
+    
+    NSData* imageData = [[NSUserDefaults standardUserDefaults] objectForKey:@"profilePictureMedium"];
+    _imageView.image=[UIImage imageWithData:imageData];
+ 
 	// Do any additional setup after loading the view.
 }
 
@@ -57,11 +69,6 @@
 //    return 1;
 //}
 //
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//    // Return the number of rows in the section.
-//    return 1;
-//}
 
 
 -(PFQuery *) queryForTable{
@@ -82,17 +89,19 @@
     }
     
     [query orderByDescending:@"createdAt"];
-    
     return query;
 }
 
+
+
+
+
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object{
     
+
     NSString *cellIdentifier = @"FeedCell";
-    
     CG_HomeFeedCell *cell =[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     [cell setFeed:object];
-    
     
     return cell;
 }
