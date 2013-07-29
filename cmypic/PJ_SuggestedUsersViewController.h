@@ -8,10 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-#import <AddressBookUI/AddressBookUI.h>
-#import <MessageUI/MessageUI.h>
 
-@interface PJ_FindFriendsViewController : PFQueryTableViewController<UISearchBarDelegate,UISearchDisplayDelegate>
-
+@interface PJ_SuggestedUsersViewController : PFQueryTableViewController
 
 @end

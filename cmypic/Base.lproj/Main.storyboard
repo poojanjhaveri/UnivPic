@@ -850,15 +850,35 @@
                         <sections>
                             <tableViewSection headerTitle="Friends" id="B1s-SG-DHq">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="5YB-Hr-SSI">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="yyE-4h-7Pg">
                                         <rect key="frame" x="0.0" y="55" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find Friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kT8-9I-QVZ">
-                                                    <rect key="frame" x="20" y="11" width="90" height="21"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find Friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUf-5W-k3u">
+                                                    <rect key="frame" x="20" y="11" width="267" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="vdN-3Z-Wli" kind="push" id="hc0-Fi-UQ9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="5YB-Hr-SSI">
+                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suggested Friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kT8-9I-QVZ">
+                                                    <rect key="frame" x="20" y="11" width="267" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
@@ -871,14 +891,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Poy-EE-SaO">
-                                        <rect key="frame" x="0.0" y="99" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="143" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invite Friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgl-9q-1YA">
-                                                    <rect key="frame" x="20" y="11" width="97" height="21"/>
+                                                    <rect key="frame" x="20" y="11" width="267" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
@@ -892,15 +912,6 @@
                             <tableViewSection headerTitle="Options" id="aZS-Hv-OvY">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="mZH-mS-gpJ">
-                                        <rect key="frame" x="0.0" y="192" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="aby-13-TYH">
                                         <rect key="frame" x="0.0" y="236" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -909,8 +920,17 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="aby-13-TYH">
+                                        <rect key="frame" x="0.0" y="280" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="6cL-hc-USS">
-                                        <rect key="frame" x="0.0" y="280" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="324" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -941,25 +961,90 @@
             </objects>
             <point key="canvasLocation" x="5020" y="2026"/>
         </scene>
-        <!--Find Friends View Controller - Find Friends-->
-        <scene sceneID="Ain-r7-3eb">
+        <!--Find Friend Controller - Find Friends-->
+        <scene sceneID="K1e-6J-mRv">
             <objects>
-                <tableViewController id="zy2-Nc-IE3" customClass="PJ_FindFriendsViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dpZ-az-JQX">
+                <tableViewController id="vdN-3Z-Wli" customClass="PJ_FindFriendController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0wf-lV-Hjp">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Seach Friends" id="yAc-D2-7jw">
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="Zvn-fe-l8B">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                             <connections>
-                                <outlet property="delegate" destination="zy2-Nc-IE3" id="c0j-6R-K9C"/>
+                                <outlet property="delegate" destination="vdN-3Z-Wli" id="afe-gt-ZUu"/>
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FriendCell" id="SFv-h0-PLI" customClass="PJ_FindFriendsCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FriendCell" id="tYT-Ic-oKk" customClass="PJ_FindFriendsCell">
                                 <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8k-Zl-lzy">
+                                            <rect key="frame" x="20" y="3" width="35" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEr-GM-AZH">
+                                            <rect key="frame" x="63" y="10" width="180" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvH-Pr-Xsw">
+                                            <rect key="frame" x="247" y="0.0" width="73" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="1" green="0.98203272799999997" blue="0.81531090080000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal" title="Follow">
+                                                <color key="titleColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="highlighted">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="displayImage" destination="C8k-Zl-lzy" id="tEd-Fw-iWW"/>
+                                    <outlet property="displayName" destination="vEr-GM-AZH" id="7cg-uu-nun"/>
+                                    <outlet property="followButton" destination="LvH-Pr-Xsw" id="92b-My-aDD"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vdN-3Z-Wli" id="tCr-Dz-5SX"/>
+                            <outlet property="delegate" destination="vdN-3Z-Wli" id="6Z9-d5-2jU"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Find Friends" id="PR5-Go-2Zk"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Zvn-fe-l8B" id="Qxo-QV-Bop"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O0D-1O-u3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5862" y="1856"/>
+        </scene>
+        <!--Suggested Users View Controller - Suggested Friends-->
+        <scene sceneID="Ain-r7-3eb">
+            <objects>
+                <tableViewController id="zy2-Nc-IE3" customClass="PJ_SuggestedUsersViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dpZ-az-JQX">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FriendCell" id="SFv-h0-PLI" customClass="PJ_FindFriendsCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -1005,9 +1090,8 @@
                         </connections>
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" title="Find Friends" id="1qo-hj-gDo"/>
+                    <navigationItem key="navigationItem" title="Suggested Friends" id="1qo-hj-gDo"/>
                     <connections>
-                        <outlet property="SeachBar" destination="yAc-D2-7jw" id="cPl-z8-oI2"/>
                         <outlet property="searchDisplayController" destination="1UL-gA-Clz" id="4Eh-fu-qka"/>
                     </connections>
                 </tableViewController>
@@ -1023,14 +1107,13 @@
                 <searchDisplayController id="1UL-gA-Clz">
                     <connections>
                         <outlet property="delegate" destination="zy2-Nc-IE3" id="EYg-Jx-0g4"/>
-                        <outlet property="searchBar" destination="yAc-D2-7jw" id="cll-Fw-SYx"/>
                         <outlet property="searchContentsController" destination="zy2-Nc-IE3" id="mac-VE-Lku"/>
                         <outlet property="searchResultsDataSource" destination="zy2-Nc-IE3" id="8fB-u7-QKV"/>
                         <outlet property="searchResultsDelegate" destination="zy2-Nc-IE3" id="XDj-ii-77N"/>
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="5696" y="2006"/>
+            <point key="canvasLocation" x="5862" y="2470"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vPO-QJ-NNA">
@@ -1189,6 +1272,127 @@
     <resources>
         <image name="photo.jpg" width="66" height="65.828575134277344"/>
     </resources>
+    <classes>
+        <class className="CG_HomeFeedCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CG_HomeFeedCell.h"/>
+            <relationships>
+                <relationship kind="action" name="addTag:"/>
+                <relationship kind="action" name="commentButtonPressed:"/>
+                <relationship kind="action" name="likeButtonPressed:"/>
+                <relationship kind="outlet" name="commentBtnOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="feedDate" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="feedDesc" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="feedPhoto" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="likeBtnOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="userName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="userPhoto" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="CG_HomeFeedsViewController" superclassName="PFQueryTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CG_HomeFeedsViewController.h"/>
+        </class>
+        <class className="CG_NewPostViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CG_NewPostViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="saveNewPost:"/>
+                <relationship kind="outlet" name="postImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="postSegmentControl" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="postSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="postTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="CG_ProfileFeedViewController" superclassName="PFQueryTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CG_ProfileFeedViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="ClassOF" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="displayName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PFQueryTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PFQueryTableViewController.h"/>
+        </class>
+        <class className="PJ_AddItemToCheckListViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_AddItemToCheckListViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="inputField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="PJ_CameraViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_CameraViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="cameraView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="vImagePreview" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="PJ_CheckListMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_CheckListMainViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="addButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="editButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="PJ_FindFriendController" superclassName="PFQueryTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_FindFriendController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
+            </relationships>
+        </class>
+        <class className="PJ_FindFriendsCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_FindFriendsCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="displayImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="displayName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="followButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="PJ_LoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_LoginViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="loginEmailAddress" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="loginPassword" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="PJ_MoreMainMenuViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_MoreMainMenuViewController.h"/>
+        </class>
+        <class className="PJ_ProfieEditViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_ProfieEditViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="ClassOf" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="University" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="emailAddress" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="firstName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="lastName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="PJ_ProfileTabController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_ProfileTabController.h"/>
+        </class>
+        <class className="PJ_SignUpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_SignUpViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="emailaddress" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="PJ_SuggestedUsersViewController" superclassName="PFQueryTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PJ_SuggestedUsersViewController.h"/>
+        </class>
+        <class className="WBTabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WBTabBarController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="centerButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="plusController" candidateClass="UIViewController"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

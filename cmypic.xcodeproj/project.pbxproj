@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E116D15179FC741000CB4C3 /* PJ_FindFriendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E116D14179FC741000CB4C3 /* PJ_FindFriendController.m */; };
 		0E170EC4179A9E6A009EA389 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E170EC3179A9E6A009EA389 /* MessageUI.framework */; };
 		0E170EC6179A9E79009EA389 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E170EC5179A9E79009EA389 /* MapKit.framework */; };
 		0E170EC8179A9E8B009EA389 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E170EC7179A9E8B009EA389 /* Twitter.framework */; };
@@ -14,7 +15,7 @@
 		0E170ECC179A9E9C009EA389 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E170ECB179A9E9C009EA389 /* AddressBook.framework */; };
 		0E170ECE179A9EA2009EA389 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E170ECD179A9EA2009EA389 /* AdSupport.framework */; };
 		0E170ED2179AB0F3009EA389 /* PJ_MoreMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E170ED1179AB0F3009EA389 /* PJ_MoreMainMenuViewController.m */; };
-		0E170ED6179AB6B5009EA389 /* PJ_FindFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E170ED5179AB6B5009EA389 /* PJ_FindFriendsViewController.m */; };
+		0E170ED6179AB6B5009EA389 /* PJ_SuggestedUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E170ED5179AB6B5009EA389 /* PJ_SuggestedUsersViewController.m */; };
 		0E170EDD179AEC11009EA389 /* PJ_ProfileTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E170EDC179AEC11009EA389 /* PJ_ProfileTabController.m */; };
 		0E178B9E177AF510009C06D4 /* PJ_ChecklistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E178B9D177AF510009C06D4 /* PJ_ChecklistModel.m */; };
 		0E23C18C178F1FF90041DA87 /* BlurOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E23C13C178F1FF90041DA87 /* BlurOverlayView.m */; };
@@ -189,6 +190,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E116D13179FC741000CB4C3 /* PJ_FindFriendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_FindFriendController.h; sourceTree = "<group>"; };
+		0E116D14179FC741000CB4C3 /* PJ_FindFriendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_FindFriendController.m; sourceTree = "<group>"; };
 		0E170EC3179A9E6A009EA389 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0E170EC5179A9E79009EA389 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0E170EC7179A9E8B009EA389 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
@@ -197,8 +200,8 @@
 		0E170ECD179A9EA2009EA389 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		0E170ED0179AB0F3009EA389 /* PJ_MoreMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_MoreMainMenuViewController.h; sourceTree = "<group>"; };
 		0E170ED1179AB0F3009EA389 /* PJ_MoreMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_MoreMainMenuViewController.m; sourceTree = "<group>"; };
-		0E170ED4179AB6B5009EA389 /* PJ_FindFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_FindFriendsViewController.h; sourceTree = "<group>"; };
-		0E170ED5179AB6B5009EA389 /* PJ_FindFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_FindFriendsViewController.m; sourceTree = "<group>"; };
+		0E170ED4179AB6B5009EA389 /* PJ_SuggestedUsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_SuggestedUsersViewController.h; sourceTree = "<group>"; };
+		0E170ED5179AB6B5009EA389 /* PJ_SuggestedUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_SuggestedUsersViewController.m; sourceTree = "<group>"; };
 		0E170EDB179AEC11009EA389 /* PJ_ProfileTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_ProfileTabController.h; sourceTree = "<group>"; };
 		0E170EDC179AEC11009EA389 /* PJ_ProfileTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_ProfileTabController.m; sourceTree = "<group>"; };
 		0E178B9C177AF510009C06D4 /* PJ_ChecklistModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_ChecklistModel.h; sourceTree = "<group>"; };
@@ -412,6 +415,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E116D10179FC6CB000CB4C3 /* FindFriends */ = {
+			isa = PBXGroup;
+			children = (
+				0E116D13179FC741000CB4C3 /* PJ_FindFriendController.h */,
+				0E116D14179FC741000CB4C3 /* PJ_FindFriendController.m */,
+			);
+			name = FindFriends;
+			sourceTree = "<group>";
+		};
+		0E116D12179FC6F9000CB4C3 /* SuggestedFriends */ = {
+			isa = PBXGroup;
+			children = (
+				0E170ED4179AB6B5009EA389 /* PJ_SuggestedUsersViewController.h */,
+				0E170ED5179AB6B5009EA389 /* PJ_SuggestedUsersViewController.m */,
+			);
+			name = SuggestedFriends;
+			sourceTree = "<group>";
+		};
 		0E170ECF179AB0D1009EA389 /* MoreMainMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -421,14 +442,14 @@
 			name = MoreMainMenu;
 			sourceTree = "<group>";
 		};
-		0E170ED3179AB6A2009EA389 /* FindFriends */ = {
+		0E170ED3179AB6A2009EA389 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
 				0EDEF10F179E97F30074C35A /* FriendCell */,
-				0E170ED4179AB6B5009EA389 /* PJ_FindFriendsViewController.h */,
-				0E170ED5179AB6B5009EA389 /* PJ_FindFriendsViewController.m */,
+				0E116D12179FC6F9000CB4C3 /* SuggestedFriends */,
+				0E116D10179FC6CB000CB4C3 /* FindFriends */,
 			);
-			name = FindFriends;
+			name = Friends;
 			sourceTree = "<group>";
 		};
 		0E178B9A177AF4E8009C06D4 /* Models */ = {
@@ -840,7 +861,7 @@
 		0EDDED421779C15400B7E790 /* More Tab */ = {
 			isa = PBXGroup;
 			children = (
-				0E170ED3179AB6A2009EA389 /* FindFriends */,
+				0E170ED3179AB6A2009EA389 /* Friends */,
 				0E170ECF179AB0D1009EA389 /* MoreMainMenu */,
 			);
 			name = "More Tab";
@@ -1149,7 +1170,7 @@
 				0E984DBB178DEC5F007C1C44 /* UIImage+RoundedCornerAdditions.m in Sources */,
 				0EEC27BC1785D6F400DBA248 /* HFImageEditorFrameView.m in Sources */,
 				0EDDED541779CF6000B7E790 /* MVSelectorContentView.m in Sources */,
-				0E170ED6179AB6B5009EA389 /* PJ_FindFriendsViewController.m in Sources */,
+				0E170ED6179AB6B5009EA389 /* PJ_SuggestedUsersViewController.m in Sources */,
 				0E23C18F178F1FF90041DA87 /* PhotoViewController.m in Sources */,
 				0EC3CEE9179290710065F5C5 /* MBProgressHUD.m in Sources */,
 				0E6B80CB176B3A8F0088A3FE /* PJ_AppDelegate.m in Sources */,
@@ -1162,6 +1183,7 @@
 				0E984DB5178DEC5F007C1C44 /* UIImage+Alpha.m in Sources */,
 				0EA05274176C85FF000D010D /* PJ_ProfieEditViewController.m in Sources */,
 				69451AF317940260001849D6 /* CG_HomeFeedCell.m in Sources */,
+				0E116D15179FC741000CB4C3 /* PJ_FindFriendController.m in Sources */,
 				0EDDED531779CF6000B7E790 /* MVScrollerClipView.m in Sources */,
 				0E178B9E177AF510009C06D4 /* PJ_ChecklistModel.m in Sources */,
 				0E71DB1C176B85D900360759 /* PJ_SignUpViewController.m in Sources */,
