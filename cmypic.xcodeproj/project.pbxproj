@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E116D15179FC741000CB4C3 /* PJ_FindFriendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E116D14179FC741000CB4C3 /* PJ_FindFriendController.m */; };
 		0E170EC4179A9E6A009EA389 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E170EC3179A9E6A009EA389 /* MessageUI.framework */; };
 		0E170EC6179A9E79009EA389 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E170EC5179A9E79009EA389 /* MapKit.framework */; };
 		0E170EC8179A9E8B009EA389 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E170EC7179A9E8B009EA389 /* Twitter.framework */; };
@@ -117,6 +116,7 @@
 		0E802C87176B4022004466D4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E802C86176B4022004466D4 /* StoreKit.framework */; };
 		0E802C89176B402A004466D4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E802C88176B402A004466D4 /* SystemConfiguration.framework */; };
 		0E802C8D176B6C5A004466D4 /* PJ_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E802C8C176B6C5A004466D4 /* PJ_LoginViewController.m */; };
+		0E8C2D6117A814E400F62F4F /* PJ_FriendFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8C2D6017A814E400F62F4F /* PJ_FriendFindViewController.m */; };
 		0E984DB5178DEC5F007C1C44 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E984DAE178DEC5E007C1C44 /* UIImage+Alpha.m */; };
 		0E984DB6178DEC5F007C1C44 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E984DAE178DEC5E007C1C44 /* UIImage+Alpha.m */; };
 		0E984DB7178DEC5F007C1C44 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E984DB0178DEC5E007C1C44 /* UIImage+AlphaAdditions.m */; };
@@ -190,8 +190,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E116D13179FC741000CB4C3 /* PJ_FindFriendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_FindFriendController.h; sourceTree = "<group>"; };
-		0E116D14179FC741000CB4C3 /* PJ_FindFriendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_FindFriendController.m; sourceTree = "<group>"; };
 		0E170EC3179A9E6A009EA389 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0E170EC5179A9E79009EA389 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0E170EC7179A9E8B009EA389 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
@@ -317,6 +315,8 @@
 		0E802C88176B402A004466D4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0E802C8B176B6C5A004466D4 /* PJ_LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_LoginViewController.h; sourceTree = "<group>"; };
 		0E802C8C176B6C5A004466D4 /* PJ_LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_LoginViewController.m; sourceTree = "<group>"; };
+		0E8C2D5F17A814E400F62F4F /* PJ_FriendFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_FriendFindViewController.h; sourceTree = "<group>"; };
+		0E8C2D6017A814E400F62F4F /* PJ_FriendFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_FriendFindViewController.m; sourceTree = "<group>"; };
 		0E984DAE178DEC5E007C1C44 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
 		0E984DAF178DEC5E007C1C44 /* UIImage+AlphaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AlphaAdditions.h"; sourceTree = "<group>"; };
 		0E984DB0178DEC5E007C1C44 /* UIImage+AlphaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AlphaAdditions.m"; sourceTree = "<group>"; };
@@ -418,8 +418,8 @@
 		0E116D10179FC6CB000CB4C3 /* FindFriends */ = {
 			isa = PBXGroup;
 			children = (
-				0E116D13179FC741000CB4C3 /* PJ_FindFriendController.h */,
-				0E116D14179FC741000CB4C3 /* PJ_FindFriendController.m */,
+				0E8C2D5F17A814E400F62F4F /* PJ_FriendFindViewController.h */,
+				0E8C2D6017A814E400F62F4F /* PJ_FriendFindViewController.m */,
 			);
 			name = FindFriends;
 			sourceTree = "<group>";
@@ -1183,7 +1183,6 @@
 				0E984DB5178DEC5F007C1C44 /* UIImage+Alpha.m in Sources */,
 				0EA05274176C85FF000D010D /* PJ_ProfieEditViewController.m in Sources */,
 				69451AF317940260001849D6 /* CG_HomeFeedCell.m in Sources */,
-				0E116D15179FC741000CB4C3 /* PJ_FindFriendController.m in Sources */,
 				0EDDED531779CF6000B7E790 /* MVScrollerClipView.m in Sources */,
 				0E178B9E177AF510009C06D4 /* PJ_ChecklistModel.m in Sources */,
 				0E71DB1C176B85D900360759 /* PJ_SignUpViewController.m in Sources */,
@@ -1196,6 +1195,7 @@
 				0EDDED551779CF6000B7E790 /* MVSelectorScrollView.m in Sources */,
 				0E23C18C178F1FF90041DA87 /* BlurOverlayView.m in Sources */,
 				0EA052A1176CE8BE000D010D /* WBTabBarController.m in Sources */,
+				0E8C2D6117A814E400F62F4F /* PJ_FriendFindViewController.m in Sources */,
 				0E23C18D178F1FF90041DA87 /* DLCImagePickerController.m in Sources */,
 				0E170ED2179AB0F3009EA389 /* PJ_MoreMainMenuViewController.m in Sources */,
 			);
@@ -1342,7 +1342,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/cmypic",
-					"$(SRCROOT)/cmypic/Scringo",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cmypic/cmypic-Prefix.pch";
@@ -1367,7 +1366,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/cmypic",
-					"$(SRCROOT)/cmypic/Scringo",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cmypic/cmypic-Prefix.pch";
