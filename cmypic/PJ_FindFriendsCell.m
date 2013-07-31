@@ -16,6 +16,10 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
+        
+       
+        
+        
     }
     return self;
 }
@@ -33,7 +37,9 @@
     
     //user info
   
-    PFObject *user = object;
+    _user = object;
+    
+    
 /*    [user fetchInBackgroundWithBlock:^(PFObject *obj, NSError *error) {
    
  //   [user fetchIfNeededInBackgroundWithBlock:^(PFObject *obj, NSError *error) {
@@ -60,16 +66,32 @@
         }
     }];*/
     
+    
     PFImageView *userPic = [[PFImageView alloc] init];
     //imageView.image = [UIImage imageNamed:@"..."]; // add placeholder image
-    userPic.file = (PFFile *)[user objectForKey:@"profilePictureSmall"]; //  image from server
+    userPic.file = (PFFile *)[_user objectForKey:@"profilePictureSmall"]; //  image from server
     [userPic loadInBackground];
     _displayImage.image = userPic.image;
     
     
-    _displayName.text = [NSString stringWithFormat:@"%@ %@", [user objectForKey:@"firstName"], [user objectForKey:@"lastName"]];
+    _displayName.text = [NSString stringWithFormat:@"%@ %@", [_user objectForKey:@"firstName"], [_user objectForKey:@"lastName"]];
+}
+
+- (IBAction)FriendButtonClicked:(id)sender {
     
+    self.followButton.selected=YES;
     
+    [self.followButton setTitle:@"Requested" forState:UIControlStateSelected];
+    [self.followButton setTitleShadowColor:[UIColor clearColor] forState:UIControlStateSelected];
+    
+    // So that user does cannot delete his request
+    self.followButton.userInteractionEnabled=FALSE;
+    
+    PFObject *newrelation=[PFObject objectWithClassName:@"FriendRelations"];
+    [newrelation setObject:[PFUser currentUser] forKey:@"toUser"];
+    [newrelation setObject:_user forKey:@"fromUser"];
+    [newrelation setObject:@"Requested" forKey:@"type"];
+    [newrelation saveEventually];
 }
 
 @end

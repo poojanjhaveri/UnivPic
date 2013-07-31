@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *followButton;
 @property (weak, nonatomic) IBOutlet UILabel *displayName;
 @property (weak, nonatomic) IBOutlet UIImageView *displayImage;
+@property (nonatomic, strong) PFUser *user;
 
 
 -(void) setUser:(PFUser *) object;
