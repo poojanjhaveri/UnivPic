@@ -220,7 +220,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     [[PFUser currentUser] setValue:[_array objectAtIndex:[_thePicker selectedRowInComponent:0]]forKey:@"ClassOf"];
 
     
-    UIImage *smallimage =[[_imageView image]thumbnailImage:64 transparentBorder:0 cornerRadius:0 interpolationQuality:kCGInterpolationMedium];
+    UIImage *smallimage =[[_imageView image]thumbnailImage:64 transparentBorder:0 cornerRadius:0 interpolationQuality:kCGInterpolationLow];
 
     NSData *imageData = UIImageJPEGRepresentation([_imageView image], 0.05f);
     NSData *smallimageData = UIImageJPEGRepresentation(smallimage, 0.05f);

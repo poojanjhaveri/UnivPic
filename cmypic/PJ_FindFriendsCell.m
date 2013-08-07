@@ -39,42 +39,53 @@
   
     _user = object;
     
-    
-/*    [user fetchInBackgroundWithBlock:^(PFObject *obj, NSError *error) {
-   
- //   [user fetchIfNeededInBackgroundWithBlock:^(PFObject *obj, NSError *error) {
-        
-        NSLog(@"yo here");
-        if(error)
-        {
-            UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Error" message:@"Please check your internet connection" delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
-            [alert show];
-        }
-        else
-        {
-        
-        //user photo
-        PFImageView *userPic = [[PFImageView alloc] init];
-        //imageView.image = [UIImage imageNamed:@"..."]; // add placeholder image
-        userPic.file = (PFFile *)[obj objectForKey:@"profilePictureSmall"]; //  image from server
-        [userPic loadInBackground];
-        _displayImage.image = userPic.image;
-        
-        //username
-        
-        _displayName.text = [NSString stringWithFormat:@"%@ %@", [obj objectForKey:@"firstName"], [obj objectForKey:@"lastName"]];
-        }
-    }];*/
-    
-    
     PFImageView *userPic = [[PFImageView alloc] init];
     //imageView.image = [UIImage imageNamed:@"..."]; // add placeholder image
     userPic.file = (PFFile *)[_user objectForKey:@"profilePictureSmall"]; //  image from server
     [userPic loadInBackground];
     _displayImage.image = userPic.image;
     
-    
     _displayName.text = [NSString stringWithFormat:@"%@ %@", [_user objectForKey:@"firstName"], [_user objectForKey:@"lastName"]];
+    
+    PFQuery *requeststatus = [PFQuery queryWithClassName:@"FriendRelations"];
+    [requeststatus whereKey:@"fromUser" equalTo:[PFUser currentUser]];
+    [requeststatus whereKey:@"toUser" equalTo:_user];
+    [requeststatus whereKey:@"type" equalTo:@"Requested"];
+     requeststatus.cachePolicy = kPFCachePolicyCacheThenNetwork;
+    
+    [requeststatus countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
+        if(!error)
+        {
+           if(number>0)
+           {
+               self.followButton.selected=YES;
+               
+               [self.followButton setTitle:@"Requested" forState:UIControlStateSelected];
+               [self.followButton setTitleShadowColor:[UIColor clearColor] forState:UIControlStateSelected];
+               self.followButton.userInteractionEnabled=FALSE;
+           }
+        }
+       
+    }];
+    
+}
+
+
+-(void) setActivity:(PFObject *) object
+{
+    _user = [object objectForKey:@"fromUser"];
+    
+    PFQuery *getuser = [PFUser query];
+    [getuser whereKey:@"objectId" equalTo:[_user objectId]];
+    PFObject *fromUser = [getuser getFirstObject];
+    
+    PFImageView *userPic = [[PFImageView alloc] init];
+    //imageView.image = [UIImage imageNamed:@"..."]; // add placeholder image
+    userPic.file = (PFFile *)[fromUser objectForKey:@"profilePictureSmall"]; //  image from server
+    [userPic loadInBackground];
+    _displayImage.image = userPic.image;
+    
+    _displayName.text = [NSString stringWithFormat:@"%@ %@", [fromUser objectForKey:@"firstName"], [fromUser objectForKey:@"lastName"]];
 }
 
 - (IBAction)FriendButtonClicked:(id)sender {
@@ -88,8 +99,8 @@
     self.followButton.userInteractionEnabled=FALSE;
     
     PFObject *newrelation=[PFObject objectWithClassName:@"FriendRelations"];
-    [newrelation setObject:[PFUser currentUser] forKey:@"toUser"];
-    [newrelation setObject:_user forKey:@"fromUser"];
+    [newrelation setObject:[PFUser currentUser] forKey:@"fromUser"];
+    [newrelation setObject:_user forKey:@"toUser"];
     [newrelation setObject:@"Requested" forKey:@"type"];
     [newrelation saveEventually];
 }

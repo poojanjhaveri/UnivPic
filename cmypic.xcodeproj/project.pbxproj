@@ -138,6 +138,7 @@
 		0EC545801782C843002BC375 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC5457F1782C843002BC375 /* CoreVideo.framework */; };
 		0EC545821782C84A002BC375 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC545811782C84A002BC375 /* AVFoundation.framework */; };
 		0EC545841782C851002BC375 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC545831782C851002BC375 /* ImageIO.framework */; };
+		0EC5FAA117AA56CE0004973A /* PJ_FriendRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC5FAA017AA56CE0004973A /* PJ_FriendRequestViewController.m */; };
 		0EDDED531779CF6000B7E790 /* MVScrollerClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED4B1779CF6000B7E790 /* MVScrollerClipView.m */; };
 		0EDDED541779CF6000B7E790 /* MVSelectorContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED4D1779CF6000B7E790 /* MVSelectorContentView.m */; };
 		0EDDED551779CF6000B7E790 /* MVSelectorScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDED4F1779CF6000B7E790 /* MVSelectorScrollView.m */; };
@@ -342,6 +343,8 @@
 		0EC5457F1782C843002BC375 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		0EC545811782C84A002BC375 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		0EC545831782C851002BC375 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		0EC5FA9F17AA56CE0004973A /* PJ_FriendRequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_FriendRequestViewController.h; sourceTree = "<group>"; };
+		0EC5FAA017AA56CE0004973A /* PJ_FriendRequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_FriendRequestViewController.m; sourceTree = "<group>"; };
 		0EDDED4A1779CF6000B7E790 /* MVScrollerClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVScrollerClipView.h; sourceTree = "<group>"; };
 		0EDDED4B1779CF6000B7E790 /* MVScrollerClipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVScrollerClipView.m; sourceTree = "<group>"; };
 		0EDDED4C1779CF6000B7E790 /* MVSelectorContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVSelectorContentView.h; sourceTree = "<group>"; };
@@ -445,6 +448,7 @@
 		0E170ED3179AB6A2009EA389 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				0EC5FA9C17AA557B0004973A /* Requests */,
 				0EDEF10F179E97F30074C35A /* FriendCell */,
 				0E116D12179FC6F9000CB4C3 /* SuggestedFriends */,
 				0E116D10179FC6CB000CB4C3 /* FindFriends */,
@@ -858,6 +862,15 @@
 			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		0EC5FA9C17AA557B0004973A /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				0EC5FA9F17AA56CE0004973A /* PJ_FriendRequestViewController.h */,
+				0EC5FAA017AA56CE0004973A /* PJ_FriendRequestViewController.m */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
 		0EDDED421779C15400B7E790 /* More Tab */ = {
 			isa = PBXGroup;
 			children = (
@@ -1171,6 +1184,7 @@
 				0EEC27BC1785D6F400DBA248 /* HFImageEditorFrameView.m in Sources */,
 				0EDDED541779CF6000B7E790 /* MVSelectorContentView.m in Sources */,
 				0E170ED6179AB6B5009EA389 /* PJ_SuggestedUsersViewController.m in Sources */,
+				0EC5FAA117AA56CE0004973A /* PJ_FriendRequestViewController.m in Sources */,
 				0E23C18F178F1FF90041DA87 /* PhotoViewController.m in Sources */,
 				0EC3CEE9179290710065F5C5 /* MBProgressHUD.m in Sources */,
 				0E6B80CB176B3A8F0088A3FE /* PJ_AppDelegate.m in Sources */,
@@ -1347,7 +1361,7 @@
 				GCC_PREFIX_HEADER = "cmypic/cmypic-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/cmypic/GPUImage-master-2/**";
 				INFOPLIST_FILE = "cmypic/cmypic-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1371,7 +1385,7 @@
 				GCC_PREFIX_HEADER = "cmypic/cmypic-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/cmypic/GPUImage-master-2/**";
 				INFOPLIST_FILE = "cmypic/cmypic-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;

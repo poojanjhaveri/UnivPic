@@ -73,7 +73,9 @@
     
     NSString *cellIdentifier = @"FriendCell";
     PJ_FindFriendsCell *cell =[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    cell.tag=indexPath.row;
    [cell setUser:(PFUser*)object];
+
     
     
     return cell;

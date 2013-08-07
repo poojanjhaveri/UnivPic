@@ -77,7 +77,7 @@
         UIAlertView *emailWrongView = [[UIAlertView alloc] initWithTitle:@"Sorry" message:emailwrong delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         [emailWrongView show];
         
-    }
+    } 
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{

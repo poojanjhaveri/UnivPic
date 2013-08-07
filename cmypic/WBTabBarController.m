@@ -50,9 +50,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.tabBar setBarTintColor:[UIColor colorWithRed:0.6 green:0.0 blue:0.0 alpha:1]];
-
-    [self.tabBar setTintColor:[UIColor yellowColor]];
+   // [self.tabBar setBarTintColor:[UIColor colorWithRed:0.6 green:0.0 blue:0.0 alpha:1]];
+    
+    
+    if([[[UIDevice currentDevice] systemVersion] floatValue]>= 7.0)
+    {
+    self.tabBar.barTintColor=[UIColor colorWithRed:0.6 green:0.0 blue:0.0 alpha:1];
+    }
+    
+    self.tabBar.tintColor=[UIColor colorWithRed:0.6 green:0.0 blue:0.0 alpha:1];
+    
+    [self.tabBar setTintColor:[UIColor colorWithRed:0.6 green:0.0 blue:0.0 alpha:1]];
     
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                       [UIColor whiteColor], NSForegroundColorAttributeName,

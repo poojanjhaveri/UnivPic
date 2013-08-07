@@ -30,7 +30,13 @@
 {
     [super viewDidLoad];
     
+    // Works only in iOS 7
+    if([[[UIDevice currentDevice] systemVersion] floatValue]>= 7.0)
+    {
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.6 green:0.0 blue:0.0 alpha:1]];
+    }
+    
+    
     [self.navigationController.navigationBar setTintColor:[UIColor yellowColor]];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor yellowColor], NSForegroundColorAttributeName,
                                                                      nil ]];

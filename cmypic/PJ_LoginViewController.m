@@ -7,6 +7,7 @@
 //
 
 #import "PJ_LoginViewController.h"
+#import "MBProgressHUD.h"
 
 @interface PJ_LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *loginEmailAddress;

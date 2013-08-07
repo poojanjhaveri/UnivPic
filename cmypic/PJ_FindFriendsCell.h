@@ -17,4 +17,5 @@
 
 
 -(void) setUser:(PFUser *) object;
+-(void) setActivity:(PFObject *) object;
 @end
