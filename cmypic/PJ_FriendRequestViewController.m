@@ -28,6 +28,7 @@
     
     PFQuery *query=[PFQuery queryWithClassName:@"FriendRelations"];
     [query whereKey:@"toUser" equalTo:[PFUser currentUser]];
+    [query whereKey:@"type" equalTo:@"Requested"];
     
     // If Pull To Refresh is enabled, query against the network by default.
     if (self.pullToRefreshEnabled) {
@@ -50,7 +51,9 @@
     
     NSString *cellIdentifier = @"FriendCell";
     PJ_FindFriendsCell *cell =[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+     cell.tag=indexPath.row;
     [cell setActivity:object];
+    cell.tag=indexPath.row;
     
     return cell;
 }

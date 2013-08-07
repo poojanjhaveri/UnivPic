@@ -117,6 +117,8 @@
 		0E802C89176B402A004466D4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E802C88176B402A004466D4 /* SystemConfiguration.framework */; };
 		0E802C8D176B6C5A004466D4 /* PJ_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E802C8C176B6C5A004466D4 /* PJ_LoginViewController.m */; };
 		0E8C2D6117A814E400F62F4F /* PJ_FriendFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8C2D6017A814E400F62F4F /* PJ_FriendFindViewController.m */; };
+		0E8CE37417B287F900839F44 /* TTTTimeIntervalFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CE37317B287F900839F44 /* TTTTimeIntervalFormatter.m */; };
+		0E8CE37517B287FA00839F44 /* TTTTimeIntervalFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CE37317B287F900839F44 /* TTTTimeIntervalFormatter.m */; };
 		0E984DB5178DEC5F007C1C44 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E984DAE178DEC5E007C1C44 /* UIImage+Alpha.m */; };
 		0E984DB6178DEC5F007C1C44 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E984DAE178DEC5E007C1C44 /* UIImage+Alpha.m */; };
 		0E984DB7178DEC5F007C1C44 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E984DB0178DEC5E007C1C44 /* UIImage+AlphaAdditions.m */; };
@@ -318,6 +320,8 @@
 		0E802C8C176B6C5A004466D4 /* PJ_LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_LoginViewController.m; sourceTree = "<group>"; };
 		0E8C2D5F17A814E400F62F4F /* PJ_FriendFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJ_FriendFindViewController.h; sourceTree = "<group>"; };
 		0E8C2D6017A814E400F62F4F /* PJ_FriendFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJ_FriendFindViewController.m; sourceTree = "<group>"; };
+		0E8CE37217B287F900839F44 /* TTTTimeIntervalFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTTimeIntervalFormatter.h; sourceTree = "<group>"; };
+		0E8CE37317B287F900839F44 /* TTTTimeIntervalFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTTimeIntervalFormatter.m; sourceTree = "<group>"; };
 		0E984DAE178DEC5E007C1C44 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
 		0E984DAF178DEC5E007C1C44 /* UIImage+AlphaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AlphaAdditions.h"; sourceTree = "<group>"; };
 		0E984DB0178DEC5E007C1C44 /* UIImage+AlphaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AlphaAdditions.m"; sourceTree = "<group>"; };
@@ -769,6 +773,22 @@
 			name = LoginView;
 			sourceTree = "<group>";
 		};
+		0E8CE36E17B287B900839F44 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		0E8CE37117B287E100839F44 /* Time Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				0E8CE37217B287F900839F44 /* TTTTimeIntervalFormatter.h */,
+				0E8CE37317B287F900839F44 /* TTTTimeIntervalFormatter.m */,
+			);
+			name = "Time Formatter";
+			sourceTree = "<group>";
+		};
 		0E926E041781A3EF0009617B /* Camera */ = {
 			isa = PBXGroup;
 			children = (
@@ -883,6 +903,8 @@
 		0EDDED481779CF2500B7E790 /* Additional Components */ = {
 			isa = PBXGroup;
 			children = (
+				0E8CE37117B287E100839F44 /* Time Formatter */,
+				0E8CE36E17B287B900839F44 /* New Group */,
 				0EC3CEE41792905C0065F5C5 /* MBProgressHUD */,
 				0E23C139178F1D890041DA87 /* DLCImageVIewController */,
 				0E984DBD178DEC64007C1C44 /* UIIMAGE categories */,
@@ -1202,6 +1224,7 @@
 				0E71DB1C176B85D900360759 /* PJ_SignUpViewController.m in Sources */,
 				69C9705A177E854300B06719 /* CG_NewPostViewController.m in Sources */,
 				0E984DB7178DEC5F007C1C44 /* UIImage+AlphaAdditions.m in Sources */,
+				0E8CE37417B287F900839F44 /* TTTTimeIntervalFormatter.m in Sources */,
 				0EDDED5D1779CFFE00B7E790 /* PJ_CheckListMainViewController.m in Sources */,
 				0E7BC41717856AF4001AFC8D /* PJ_RetakeCameraViewController.m in Sources */,
 				0E170EDD179AEC11009EA389 /* PJ_ProfileTabController.m in Sources */,
@@ -1226,6 +1249,7 @@
 				0E6B80E6176B3A8F0088A3FE /* cmypicTests.m in Sources */,
 				69451AF017940260001849D6 /* CG_ProfileFeedViewController.m in Sources */,
 				0E984DBA178DEC5F007C1C44 /* UIImage+ResizeAdditions.m in Sources */,
+				0E8CE37517B287FA00839F44 /* TTTTimeIntervalFormatter.m in Sources */,
 				69C9705B177E854300B06719 /* CG_NewPostViewController.m in Sources */,
 				0E984DB8178DEC5F007C1C44 /* UIImage+AlphaAdditions.m in Sources */,
 			);

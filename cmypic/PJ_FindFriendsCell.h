@@ -10,11 +10,11 @@
 #import <Parse/Parse.h>
 
 @interface PJ_FindFriendsCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIButton *followButton;
-@property (weak, nonatomic) IBOutlet UILabel *displayName;
-@property (weak, nonatomic) IBOutlet UIImageView *displayImage;
+@property (strong, nonatomic) IBOutlet UIButton *followButton;
+@property (strong, nonatomic) IBOutlet UILabel *displayName;
+@property (strong, nonatomic) IBOutlet UIImageView *displayImage;
 @property (nonatomic, strong) PFUser *user;
-
+@property (nonatomic, strong) PFUser *requestuser;
 
 -(void) setUser:(PFUser *) object;
 -(void) setActivity:(PFObject *) object;

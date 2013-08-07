@@ -31,10 +31,16 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
-        isLikedByUser = FALSE;
+     //   isLikedByUser = FALSE;
     }
     return self;
 }
+
+-(void)awakeFromNib
+{
+    _timeIntervalFormatter=[[TTTTimeIntervalFormatter alloc] init];
+}
+
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
@@ -124,7 +130,13 @@
         
     }];
    
-    feedDate.text = [NSString stringWithFormat:@"%@" , object.createdAt]; //needs formatting
+    NSTimeInterval timeInterval = [[object createdAt] timeIntervalSinceNow];
+    NSString *timestamp = [self.timeIntervalFormatter stringForTimeInterval:timeInterval];
+    NSLog(@"time is %@",timestamp);
+    feedDate.text=timestamp;
+    
+    //feedDate.text = [NSString stringWithFormat:@"%@" , object.createdAt]; //needs formatting
+    
     
     imageView = [[PFImageView alloc] init];
     //imageView.image = [UIImage imageNamed:@"..."]; // add placeholder image

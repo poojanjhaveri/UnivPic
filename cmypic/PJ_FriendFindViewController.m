@@ -73,9 +73,9 @@
 }
 
 
--(void)viewDidAppear:(BOOL)animated
+-(void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidAppear:NO];
+    [super viewWillAppear:NO];
     [self.searchBar becomeFirstResponder];
 }
 

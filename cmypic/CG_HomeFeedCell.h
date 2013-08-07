@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import "TTTTimeIntervalFormatter.h"
 
 @interface CG_HomeFeedCell : UITableViewCell
 
@@ -19,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *feedDesc;
 @property (weak, nonatomic) IBOutlet UIButton *commentBtnOutlet;
 @property (weak, nonatomic) IBOutlet UIButton *likeBtnOutlet;
+
+@property(strong,nonatomic)TTTTimeIntervalFormatter *timeIntervalFormatter;
 
 @property (strong, nonatomic) PFImageView *imageView;
 
